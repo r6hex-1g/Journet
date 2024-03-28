@@ -1,2 +1,2 @@
-# myro-clone
-PWA class in clone site: Myro
+# jinjjaSeoul-clone-apply
+PWA class in clone apply site: jinjjaSeoul
