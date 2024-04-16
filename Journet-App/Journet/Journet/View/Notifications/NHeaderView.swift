@@ -3,7 +3,7 @@ import SwiftUI
 struct CHeaderView: View {
     var body: some View {
         HStack {
-            Text("Hello, Chat!")
+            Text("Notifications")
         }
         .padding()
     }
