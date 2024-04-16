@@ -7,12 +7,25 @@
 		<key>DynamicIslandWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Journet.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>24819FE92BCCCE2B00003B15</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2481A0032BCCD1E100003B15</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

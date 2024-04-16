@@ -27,10 +27,12 @@ struct I1HeaderView: View {
                     Text("Connect to")
                         .font(biggerText)
                         .fontWeight(.bold)
+                        .fontDesign(.rounded)
                     Text("Journey")
                         .font(biggerText)
                         .fontWeight(.bold)
                         .foregroundStyle(Color("MainColor"))
+                        .fontDesign(.rounded)
                 }
                 
                 Text("일기를 통해 타인과 연결되어보세요.")

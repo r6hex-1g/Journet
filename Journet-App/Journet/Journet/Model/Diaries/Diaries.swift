@@ -1,7 +1,7 @@
 import Combine
 import ActivityKit
 
-final class Booking: ObservableObject {
+final class Diaries: ObservableObject {
     @Published var num: Int = 0
     
     private var cancellable: Set<AnyCancellable> = Set()

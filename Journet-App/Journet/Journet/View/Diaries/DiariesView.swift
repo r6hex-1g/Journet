@@ -1,20 +1,19 @@
 import SwiftUI
 
 struct BookingView: View {
-    @State var booking = Booking()
+    @State var diaries = Diaries()
     
     var body: some View {
-        
         BHeaderView()
-        
         Spacer()
-        
-        Button("start") {
-            booking.onLiveActivity()
-        }
-        
-        Button("stop") {
-            booking.offLiveActivity()
+        VStack {
+            Button("start") {
+                diaries.onLiveActivity()
+            }
+            
+            Button("stop") {
+                diaries.offLiveActivity()
+            }
         }
         
         Spacer()

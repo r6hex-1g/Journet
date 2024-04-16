@@ -1,10 +1,10 @@
 import SwiftUI
 
-struct FHeaderView: View {
+struct HHeaderView: View {
     var body: some View {
         VStack(spacing: 25) {
             HStack {
-                Text("histoire")
+                Text("Journet")
                     .fontWeight(.bold)
                 
             }
