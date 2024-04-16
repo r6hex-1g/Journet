@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2413DF2B2BCE79DB00CA1CDC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413DF2A2BCE79DB00CA1CDC /* Category.swift */; };
 		24819FEE2BCCCE2B00003B15 /* JournetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24819FED2BCCCE2B00003B15 /* JournetApp.swift */; };
 		24819FF02BCCCE2B00003B15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24819FEF2BCCCE2B00003B15 /* ContentView.swift */; };
 		24819FF22BCCCE2D00003B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24819FF12BCCCE2D00003B15 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2413DF2A2BCE79DB00CA1CDC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		24819FEA2BCCCE2B00003B15 /* Journet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24819FED2BCCCE2B00003B15 /* JournetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournetApp.swift; sourceTree = "<group>"; };
 		24819FEF2BCCCE2B00003B15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2413DF292BCE79C800CA1CDC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2413DF2A2BCE79DB00CA1CDC /* Category.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		24819FE12BCCCE2B00003B15 = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +204,7 @@
 		2481A01E2BCCD20500003B15 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2413DF292BCE79C800CA1CDC /* Home */,
 				24A09C3B2BCD25AC0080C29C /* Diaries */,
 				2481A01F2BCCD20D00003B15 /* Tab */,
 			);
@@ -439,6 +450,7 @@
 				24A09C2A2BCD20B30080C29C /* WelcomeView.swift in Sources */,
 				2481A0262BCCD26600003B15 /* TabbarView.swift in Sources */,
 				24A09C272BCD208E0080C29C /* ProflieView.swift in Sources */,
+				2413DF2B2BCE79DB00CA1CDC /* Category.swift in Sources */,
 				24A09C1D2BCD1FE90080C29C /* HomeView.swift in Sources */,
 				24819FF02BCCCE2B00003B15 /* ContentView.swift in Sources */,
 				24A09C1B2BCD1FCC0080C29C /* HHeaderView.swift in Sources */,
