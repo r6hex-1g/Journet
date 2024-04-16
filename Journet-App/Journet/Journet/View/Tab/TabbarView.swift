@@ -2,7 +2,7 @@ import SwiftUI
 
 struct TabbarView: View {
     //MARK: - View Properties
-    @State private var activeTab: Tab = .feed
+    @State private var activeTab: Tab = .Map
     
     //MARK: - All Tab's
     @State private var allTabs: [AnimatedTab] = Tab.allCases.compactMap { tab -> AnimatedTab? in
@@ -20,19 +20,19 @@ struct TabbarView: View {
                 NavigationStack {
                     FeedView()
                 }
-                .setUpTab(.feed)
+                .setUpTab(.Map)
                 
                 //MARK: - Booking views
                 NavigationStack {
                     BookingView()
                 }
-                .setUpTab(.booking)
+                .setUpTab(.Diaries)
                 
                 //MARK: - Chat views
                 NavigationStack {
                     ChatView()
                 }
-                .setUpTab(.chat)
+                .setUpTab(.Notifications)
                 
                 //MARK: - profiles views
                 NavigationStack {

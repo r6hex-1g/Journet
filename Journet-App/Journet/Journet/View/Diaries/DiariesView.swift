@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct BookingView: View {
-    @State var booking = Booking()
+    @State var diaries = Diaries()
     
     var body: some View {
         
@@ -10,11 +10,11 @@ struct BookingView: View {
         Spacer()
         
         Button("start") {
-            booking.onLiveActivity()
+            diaries.onLiveActivity()
         }
         
         Button("stop") {
-            booking.offLiveActivity()
+            diaries.offLiveActivity()
         }
         
         Spacer()
