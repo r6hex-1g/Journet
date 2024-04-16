@@ -1,19 +1,26 @@
-# 📂 : Project info
-### "Journet"
-PWA class in clone apply site: [jinjjaSeoul](https://jinjja-seoul.com/)
-2024. 03. 28. ~
-<br/>
-<br/>
+<div align="center">
+    <h1>📂 : Project info</h1>
+    <h3>"Journet"</h3>
+    PWA class in clone apply site: <a href="https://jinjja-seoul.com/">jinjjaSeoul</a>
+    <br>
+    2024. 03. 28. ~
+</div>
+<br>
+<br>
+<br>
 
-# 👥 : Project members
-### <b>[라희](https://github.com/r6hex-1g)</b>  <b>[채연](https://github.com/meoritdol)</b> [루나](https://github.com/RunaUXLabs)
+<div align="center">
+    <h1>👥 : Project members</h1>
+    <h3>
+        <a href="https://github.com/r6hex-1g">라희</a>
+        <a href="https://github.com/meoritdol">채연</a>
+        <a href="https://github.com/RunaUXLabs">루나</a>
+    </h3>
 "RunaUXLabs" has been supporter.
-<br/>
-<br/>
+</div>
+<br>
+<br>
+<br>
 
-# 💻 : Getting Started
-    git clone https://github.com/r6hex-1g/Journet.git
-<br/>
-<br/>
-
-# ⚙️ : Main Functions
+<div align="center">
+    <h1>⚙️ : Main Functions</h1>
