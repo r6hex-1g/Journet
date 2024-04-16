@@ -46,10 +46,12 @@ struct WHeaderView: View {
                     Text("Welcome to")
                         .font(biggerText)
                         .fontWeight(.bold)
+                        .fontDesign(.rounded)
                     Text("Journet")
                         .font(biggerText)
                         .fontWeight(.bold)
                         .foregroundColor(Color("MainColor"))
+                        .fontDesign(.rounded)
                 }
                 Text("일기를 통해 사람들과 소통하고 나누는 여행에 진심인 곳.")
             }
