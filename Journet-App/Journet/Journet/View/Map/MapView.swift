@@ -1,9 +1,9 @@
 import SwiftUI
 
-struct FeedView: View {
+struct MapView: View {
     var body: some View {
         VStack(spacing: 0) {
-            FHeaderView()
+            MHeaderView()
             
             Spacer()
             

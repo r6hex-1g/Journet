@@ -46,10 +46,12 @@ struct WHeaderView: View {
                     Text("Welcome to")
                         .font(biggerText)
                         .fontWeight(.bold)
+                        .fontDesign(.rounded)
                     Text("Journet")
                         .font(biggerText)
                         .fontWeight(.bold)
                         .foregroundColor(Color("MainColor"))
+                        .fontDesign(.rounded)
                 }
                 Text("일기를 통해 사람들과 소통하고 나누는 여행에 진심인 곳.")
             }
@@ -73,7 +75,7 @@ struct WFooterView: View {
     var body: some View {
         VStack {
             VStack(spacing: 20.0) {
-                Text("케어+앱은 사용자의 개인정보를 중요하게 생각하고 관리합니다. 아래 버튼을 누름으로써 개인정보 수집에 동의하시는 것으로 보고, 앱 사용시에 수집하는 개인정보에 대해 개발자는 엄격히 관리함을 확인합니다. 광고 추적과 같은 기능적인 수집 데이터는 설정에서 변경 가능합니다.")
+                Text("Journet 앱은 사용자의 개인정보를 중요하게 생각하고 관리합니다. 아래 버튼을 누름으로써 개인정보 수집에 동의하시는 것으로 보고, 앱 사용시에 수집하는 개인정보에 대해 개발자는 엄격히 관리함을 확인합니다. 광고 추적과 같은 기능적인 수집 데이터는 설정에서 변경 가능합니다.")
                     .multilineTextAlignment(.center)
                     .font(.caption)
                     .foregroundColor(.gray)

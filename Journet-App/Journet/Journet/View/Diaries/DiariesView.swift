@@ -1,11 +1,11 @@
 import SwiftUI
 
-struct BookingView: View {
+struct DiariesView: View {
     @State var booking = Booking()
     
     var body: some View {
         
-        BHeaderView()
+        DHeaderView()
         
         Spacer()
         
