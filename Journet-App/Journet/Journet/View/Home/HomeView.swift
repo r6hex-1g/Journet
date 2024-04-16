@@ -11,8 +11,9 @@ struct HomeView: View {
                 Mapdelegate()
                     .padding()
             }
-            Spacer()
-            HomeTextView()
+            VStack(alignment: .leading, spacing: 0) {
+                HomeDiaryView()
+            }
             Spacer()
         }
     }
@@ -33,11 +34,46 @@ struct Mapdelegate: View {
 }
 
 //MARK: - textView
-struct HomeTextView: View {
+struct HomeDiaryView: View {
+    let biggerText = Font.system(size: 30.0)
+    @State var username: String = "Journer"
+    
     var body: some View {
-        VStack {
-            Text("안녕하세요")
+        VStack(alignment: .leading, spacing: 5) {
+            VStack(alignment: .leading) {
+                Text("These are")
+                    .font(biggerText)
+                    .fontWeight(.bold)
+                    .fontDesign(.rounded)
+                HStack(spacing: 0) {
+                    Text("\(username)")
+                        .font(biggerText)
+                        .fontWeight(.bold)
+                        .fontDesign(.rounded)
+                        .foregroundColor(Color("MainColor"))
+                    Text("'s")
+                        .font(biggerText)
+                        .fontWeight(.bold)
+                        .fontDesign(.rounded)
+                }
+                Text("new diaries!")
+                    .font(biggerText)
+                    .fontWeight(.bold)
+                    .fontDesign(.rounded)
+            }
+            .padding()
+            
+            ScrollView(.horizontal) {
+                VStack(alignment: .leading, spacing: 10) {
+                    HStack(spacing: 30) {
+                        DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희")
+                        DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희")
+                    }
+                    
+                }
+            }
         }
+        .padding()
     }
 }
 
