@@ -18,7 +18,7 @@ struct TabbarView: View {
                 
                 //MARK: - Feed views
                 NavigationStack {
-                    FeedView()
+                    MapView()
                 }
                 .setUpTab(.Map)
                 
