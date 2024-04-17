@@ -44,6 +44,7 @@
 		24ABD1172BCE52CA0089764C /* SearchingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD1162BCE52CA0089764C /* SearchingBar.swift */; };
 		24ABD11B2BCE58730089764C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD11A2BCE58730089764C /* MapView.swift */; };
 		24ABD11E2BCE5DB80089764C /* DiaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD11D2BCE5DB80089764C /* DiaryCard.swift */; };
+		24BC25CB2BD02BD3002D9EDA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 24BC25CA2BD02BD3002D9EDA /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BC25CB2BD02BD3002D9EDA /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +363,9 @@
 				2481A0172BCCD1E300003B15 /* PBXTargetDependency */,
 			);
 			name = Journet;
+			packageProductDependencies = (
+				24BC25CA2BD02BD3002D9EDA /* Lottie */,
+			);
 			productName = Journet;
 			productReference = 24819FEA2BCCCE2B00003B15 /* Journet.app */;
 			productType = "com.apple.product-type.application";
@@ -409,6 +414,9 @@
 				Base,
 			);
 			mainGroup = 24819FE12BCCCE2B00003B15;
+			packageReferences = (
+				24BC25C92BD02BD3002D9EDA /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 24819FEB2BCCCE2B00003B15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -766,6 +774,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24BC25C92BD02BD3002D9EDA /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24BC25CA2BD02BD3002D9EDA /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24BC25C92BD02BD3002D9EDA /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		24819FF82BCCCE2D00003B15 /* Journet.xcdatamodeld */ = {
