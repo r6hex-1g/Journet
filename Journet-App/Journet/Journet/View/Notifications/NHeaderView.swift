@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CHeaderView: View {
+struct NHeaderView: View {
     var body: some View {
         HStack {
             Text("Notifications")
