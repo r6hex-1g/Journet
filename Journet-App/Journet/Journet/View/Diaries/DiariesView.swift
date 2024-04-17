@@ -15,11 +15,10 @@ struct DiariesView: View {
                 diaries.offLiveActivity()
             }
         }
-        
         Spacer()
     }
 }
 
 #Preview {
-    ContentView()
+    DiariesView()
 }
