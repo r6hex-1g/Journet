@@ -10,5 +10,5 @@ struct NHeaderView: View {
 }
 
 #Preview {
-    CHeaderView()
+    NHeaderView()
 }

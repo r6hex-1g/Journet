@@ -10,5 +10,5 @@ struct DHeaderView: View {
 }
 
 #Preview {
-    BHeaderView()
+    DHeaderView()
 }
