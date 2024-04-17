@@ -67,7 +67,7 @@ struct HomeDiaryView: View {
             .padding()
             
             ScrollView(.horizontal) {
-                    HStack(spacing: 25) {
+                    HStack(spacing: 30) {
                         DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희")
                         DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희")
                         DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희")
@@ -82,7 +82,6 @@ struct HomeDiaryView: View {
 //MARK: - CategoryView
 struct HomecategoryView: View {
     let biggerText = Font.system(size: 30.0)
-    @State var username: String = "Journer"
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
@@ -92,29 +91,33 @@ struct HomecategoryView: View {
                     .fontWeight(.bold)
                     .fontDesign(.rounded)
                 HStack(spacing: 0) {
-                    Text("\(username)")
+                    Text("new ")
+                        .font(biggerText)
+                        .fontWeight(.bold)
+                        .fontDesign(.rounded)
+                    Text("Category")
                         .font(biggerText)
                         .fontWeight(.bold)
                         .fontDesign(.rounded)
                         .foregroundColor(Color("MainColor"))
-                    Text("'s")
+                    Text("!")
                         .font(biggerText)
                         .fontWeight(.bold)
                         .fontDesign(.rounded)
                 }
-                Text("new diaries!")
-                    .font(biggerText)
-                    .fontWeight(.bold)
-                    .fontDesign(.rounded)
             }
             .padding()
             
-//            ScrollView(.horizontal) {
-//                VStack(alignment: .leading, spacing: 20) {
-//                    //
-//                    .padding(.leading)
-//                }
-//            }
+            ScrollView(.horizontal) {
+                VStack(alignment: .leading, spacing: 20) {
+                    HStack(spacing: 30) {
+                        CategoryCard(imoji: "🌷", title: "튤립 천국인 곳", description: "튤립을 정적으로 만날 수 있는 곳들이에요!")
+                        CategoryCard(imoji: "🌷", title: "튤립 천국인 곳", description: "튤립을 정적으로 만날 수 있는 곳들이에요!")
+                        CategoryCard(imoji: "🌷", title: "튤립 천국인 곳", description: "튤립을 정적으로 만날 수 있는 곳들이에요!")
+                        
+                    }
+                }
+            }
         }
         .padding()
     }
