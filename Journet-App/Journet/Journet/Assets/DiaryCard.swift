@@ -10,7 +10,7 @@ struct DiaryCard: View {
         VStack(alignment: .leading) {
             Image(image)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .frame(width: 225, height: 100)
             
             HStack {
                 VStack(alignment: .leading) {
@@ -38,11 +38,15 @@ struct DiaryCard: View {
             }
             .padding()
         }
-        .cornerRadius(10)
+        .cornerRadius(20)
         .overlay(
-            RoundedRectangle(cornerRadius: 10)
+            RoundedRectangle(cornerRadius: 20)
                 .stroke(Color(.sRGB, red: 97/255, green: 144/255, blue: 244/255, opacity: 0.3), lineWidth: 1)
         )
-        .frame(width: 200, height: 250)
+        .frame(width: 225)
     }
+}
+
+#Preview {
+    DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희")
 }

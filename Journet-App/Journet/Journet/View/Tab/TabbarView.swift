@@ -1,101 +1,118 @@
 import SwiftUI
+import Lottie
 
 struct TabbarView: View {
-    //MARK: - View Properties
-    @State private var activeTab: Tab = .Home
-    
-    //MARK: - All Tab's
-    @State private var allTabs: [AnimatedTab] = Tab.allCases.compactMap { tab -> AnimatedTab? in
-        return .init(tab: tab)
+    init() {
+        UITabBar.appearance().isHidden = true
     }
     
-    //MARK: - Bounce Property
-    @State private var bouncesDown: Bool = false
+    //MARK: - View Properties
+    
+    @State var currentTab: Tab = .home
+    @State var animatedIcons: [AnimatedIcons] = {
+        var tabs: [AnimatedIcons] = []
+        for tab in Tab.allCases {
+            tabs.append(.init(tabIcon: tab, lottieView: LottieAnimationView(name: tab.rawValue, bundle: .main)))
+        }
+        return tabs
+    }()
+    
+    @Environment(\.colorScheme) var scheme
     
     var body: some View {
         VStack(spacing: 0) {
-            TabView(selection: $activeTab) {
-                
-                //MARK: - Feed views
-                NavigationStack {
+            TabView(selection: $currentTab) {
+                VStack {
                     HomeView()
+                        .tag(Tab.home)
                 }
-                .setUpTab(.Home)
                 
-                //MARK: - Booking views
-                NavigationStack {
-                    BookingView()
-                }
-                .setUpTab(.Diaries)
+                DiariesView()
+                    .tag(Tab.diaries)
                 
-                //MARK: - Chat views
-                NavigationStack {
-                    ChatView()
-                }
-                .setUpTab(.Notifications)
+                NotificationView()
+                    .tag(Tab.notifications)
                 
-                //MARK: - profiles views
-                NavigationStack {
-                    ProfileView()
-                }
-                .setUpTab(.profiles)
+                ProfileView()
+                    .tag(Tab.profiles)
             }
-            CustomTabBar()
+            
+            //MARK: - iOS 16 Update code
+            if #available(iOS 16, *) {
+                Tabbar()
+                    .toolbar(.hidden, for: .tabBar)
+            } else {
+                Tabbar()
+            }
         }
     }
     
-    //MARK: - Custom Tab Bar
-    func CustomTabBar() -> some View {
+    //MARK: - Tabbar Design
+    @ViewBuilder
+    func Tabbar() -> some View {
         HStack(spacing: 0) {
-            ForEach($allTabs) { $animatedTab in
-                let tab = animatedTab.tab
+            ForEach(animatedIcons) { icon in
+                let tabColor: SwiftUI.Color = currentTab == icon.tabIcon ? (scheme == .dark ? Color("DarkMainColor") : Color("MainColor")) : .gray.opacity(0.6)
                 
-                VStack(spacing: 4) {
-                    Image(systemName: tab.rawValue)
-                        .font(.title2)
-                        .symbolEffect(.bounce.up.byLayer, value: animatedTab.isAnimateing)
+                VStack(spacing: -10) {
+                    ResizableLottieView(lottieView: icon.lottieView, color: tabColor)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 50)
                     
-                    Text(tab.title)
-                        .font(.caption2)
-                        .textScale(.secondary)
+                    Text(icon.tabIcon.title)
+                        .font(.caption)
+                        .foregroundColor(currentTab == icon.tabIcon ? Color("MainColor") : .gray.opacity(0.6))
                 }
                 
-                .frame(maxWidth: .infinity)
-                .foregroundStyle(activeTab == tab ? Color("MainColor") : Color.gray.opacity(0.8))
-                .padding(.top, 15)
-                .padding(.bottom, 10)
-                .contentShape(.rect)
-                
-                //MARK: - use Button
-                .onTapGesture {
-                    withAnimation(.bouncy, completionCriteria: .logicallyComplete, {
-                        activeTab = tab
-                        animatedTab.isAnimateing = true
-                    }, completion: {
-                        var trasnaction = Transaction()
-                        trasnaction.disablesAnimations = true
-                        withTransaction(trasnaction) {
-                            animatedTab.isAnimateing = nil
+                    .frame(maxWidth: .infinity)
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        // MARK: - Updating Current Tab & Playing Animation
+                        currentTab = icon.tabIcon
+                        icon.lottieView.play { _ in
+                            //
                         }
-                    })
-                    
-                }
+                    }
+                
             }
         }
+        .padding(.horizontal)
+        .padding(.vertical, 10)
         .background(.bar)
     }
 }
 
-#Preview {
-    ContentView()
-}
 
+//MARK: - setup to BackGround
 extension View {
     @ViewBuilder
-    func setUpTab(_ tab: Tab) -> some View {
+    func setBG() -> some View {
         self
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .tag(tab)
-            .toolbar(.hidden, for: .tabBar)
+            .background {
+                Color.primary
+                    .opacity(0.05)
+                    .ignoresSafeArea()
+            }
     }
+}
+
+//MARK: - title mod.
+extension Tab {
+    var title: String {
+        switch self {
+        case .home:
+            return "Home"
+        case .diaries:
+            return "Diaries"
+        case .notifications:
+            return "Notifications"
+        case .profiles:
+            return "Profiles"
+        }
+    }
+}
+
+#Preview {
+    TabbarView()
 }

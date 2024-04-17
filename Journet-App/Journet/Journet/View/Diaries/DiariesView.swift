@@ -1,10 +1,10 @@
 import SwiftUI
 
-struct BookingView: View {
+struct DiariesView: View {
     @State var diaries = Diaries()
     
     var body: some View {
-        BHeaderView()
+        DHeaderView()
         Spacer()
         VStack {
             Button("start") {
@@ -15,11 +15,10 @@ struct BookingView: View {
                 diaries.offLiveActivity()
             }
         }
-        
         Spacer()
     }
 }
 
 #Preview {
-    ContentView()
+    DiariesView()
 }

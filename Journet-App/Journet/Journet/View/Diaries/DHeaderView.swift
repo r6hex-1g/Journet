@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct BHeaderView: View {
+struct DHeaderView: View {
     var body: some View {
         HStack {
             Text("Diaries")
@@ -10,5 +10,5 @@ struct BHeaderView: View {
 }
 
 #Preview {
-    BHeaderView()
+    DHeaderView()
 }

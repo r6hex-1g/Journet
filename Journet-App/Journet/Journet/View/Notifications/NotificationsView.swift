@@ -1,9 +1,9 @@
 import SwiftUI
 
-struct ChatView: View {
+struct NotificationView: View {
     var body: some View {
         VStack {
-            CHeaderView()
+            NHeaderView()
             
             Spacer()
         }
