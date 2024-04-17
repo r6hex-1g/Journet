@@ -2,9 +2,15 @@ import SwiftUI
 
 @main
 struct JournetApp: App {
+    @AppStorage("didLaunchBefore") var didLaunchBefore: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            if didLaunchBefore {
+                WelcomeView()
+            } else {
+                TabbarView()
+            }
         }
     }
 }
