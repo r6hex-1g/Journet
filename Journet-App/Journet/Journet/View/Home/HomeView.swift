@@ -1,5 +1,6 @@
 import SwiftUI
 
+//MARK: - Views setup
 struct HomeView: View {
     @State var text: String = ""
     
@@ -13,7 +14,7 @@ struct HomeView: View {
                     .padding()
             }
             ScrollView(.vertical) {
-                VStack(alignment: .leading, spacing: 0) {
+                VStack {
                     HomeDiaryView()
                     HomecategoryView()
                 }

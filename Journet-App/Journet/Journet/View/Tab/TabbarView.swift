@@ -62,7 +62,7 @@ struct TabbarView: View {
                 
                 .frame(maxWidth: .infinity)
                 .foregroundStyle(activeTab == tab ? Color("MainColor") : Color.gray.opacity(0.8))
-                .padding(.top, 15)
+                .padding(.top, 20)
                 .padding(.bottom, 10)
                 .contentShape(.rect)
                 
@@ -78,16 +78,11 @@ struct TabbarView: View {
                             animatedTab.isAnimateing = nil
                         }
                     })
-                    
                 }
             }
         }
         .background(.bar)
     }
-}
-
-#Preview {
-    ContentView()
 }
 
 extension View {
@@ -98,4 +93,8 @@ extension View {
             .tag(tab)
             .toolbar(.hidden, for: .tabBar)
     }
+}
+
+#Preview {
+    ContentView()
 }
