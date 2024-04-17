@@ -4,18 +4,17 @@ struct HomeView: View {
     @State var text: String = ""
     
     var body: some View {
-        LazyVStack(pinnedViews: [.sectionHeaders]) {
-            Section(header: HHeaderView()) {
-                HStack(alignment: .center, spacing: -5) {
-                    SearchingBar(text: self.$text)
-                    Mapdelegate()
-                        .padding()
-                }
+        VStack(spacing: 0) {
+            HHeaderView()
+            HStack(alignment: .center, spacing: -25) {
+                SearchingBar(text: self.$text)
+                Mapdelegate()
+                    .padding()
             }
-            VStack(alignment: .leading, spacing: 0) {
-                HomeDiaryView()
-                Spacer()
-                HomecategoryView()
+            ScrollView(.vertical) {
+                VStack(alignment: .leading, spacing: 0) {
+                    HomeDiaryView()
+                }
             }
             Spacer()
         }
@@ -23,7 +22,7 @@ struct HomeView: View {
 }
 
 
-//MARK: - Map icon Button
+//MARK: - Map icon
 struct Mapdelegate: View {
     var body: some View {
         NavigationLink(destination: MapView()) {
@@ -36,7 +35,7 @@ struct Mapdelegate: View {
     }
 }
 
-//MARK: - DiaryView
+//MARK: - textView
 struct HomeDiaryView: View {
     let biggerText = Font.system(size: 30.0)
     @State var username: String = "Journer"
@@ -80,38 +79,6 @@ struct HomeDiaryView: View {
     }
 }
 
-//MARK: - Category Views
-struct HomecategoryView: View {
-    let biggerText = Font.system(size: 30.0)
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            VStack(alignment: .leading) {
-                Text("These are")
-                    .font(biggerText)
-                    .fontWeight(.bold)
-                    .fontDesign(.rounded)
-                HStack(spacing: 0) {
-                    Text("username")
-                        .font(biggerText)
-                        .fontWeight(.bold)
-                        .fontDesign(.rounded)
-                        .foregroundColor(Color("MainColor"))
-                    Text("'s")
-                        .font(biggerText)
-                        .fontWeight(.bold)
-                        .fontDesign(.rounded)
-                }
-                Text("new diaries!")
-                    .font(biggerText)
-                    .fontWeight(.bold)
-                    .fontDesign(.rounded)
-            }
-            .padding()
-        }
-    }
-}
-    
 //MARK: - Previews
 #Preview {
     HomeView()
