@@ -11,8 +11,10 @@ struct HomeView: View {
                 Mapdelegate()
                     .padding()
             }
-            VStack(alignment: .leading, spacing: 0) {
-                HomeDiaryView()
+            ScrollView(.vertical) {
+                VStack(alignment: .leading, spacing: 0) {
+                    HomeDiaryView()
+                }
             }
             Spacer()
         }
