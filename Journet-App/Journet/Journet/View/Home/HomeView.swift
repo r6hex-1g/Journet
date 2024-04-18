@@ -5,18 +5,20 @@ struct HomeView: View {
     @State var text: String = ""
     
     var body: some View {
-        VStack(spacing: 0) {
-            HHeaderView()
-            Spacer()
-            HStack(alignment: .center, spacing: -25) {
-                SearchingBar(text: self.$text)
-                Mapdelegate()
-                    .padding()
-            }
-            ScrollView(.vertical) {
-                VStack {
-                    HomeDiaryView()
-                    HomecategoryView()
+        NavigationView {
+            VStack(spacing: 0) {
+                HHeaderView()
+                Spacer()
+                HStack(alignment: .center, spacing: -25) {
+                    SearchingBar(text: self.$text)
+                    Mapdelegate()
+                        .padding()
+                }
+                ScrollView(.vertical) {
+                    VStack {
+                        HomeDiaryView()
+                        HomecategoryView()
+                    }
                 }
             }
         }
@@ -115,8 +117,8 @@ struct HomecategoryView: View {
                         CategoryCard(imoji: "🌷", title: "튤립 천국인 곳", description: "튤립을 정적으로 만날 수 있는 곳들이에요!")
                         CategoryCard(imoji: "🌷", title: "튤립 천국인 곳", description: "튤립을 정적으로 만날 수 있는 곳들이에요!")
                         CategoryCard(imoji: "🌷", title: "튤립 천국인 곳", description: "튤립을 정적으로 만날 수 있는 곳들이에요!")
-                        
                     }
+                    .padding(.leading)
                 }
             }
         }
