@@ -31,7 +31,7 @@ struct Mapdelegate: View {
         NavigationLink(destination: NotificationView()) {
             Image(systemName: "bell.fill")
                 .resizable()
-                .frame(width: 20, height: 25, alignment: .center)
+                .frame(width: 20, height: 23, alignment: .center)
                 .foregroundColor(Color("MainColor"))
                 .padding()
         }
