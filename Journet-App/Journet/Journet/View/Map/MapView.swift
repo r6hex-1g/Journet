@@ -1,32 +1,29 @@
 import SwiftUI
 import MapKit
-import CoreLocation
 
-// MARK: - Map View
+//MARK: - EZ location
+extension CLLocationCoordinate2D {
+    static let EZ = CLLocationCoordinate2D(latitude: 36.6350782, longitude: 127.4576923)
+}
+
+
+//MARK: - Map View
 struct MapView: View {
-    @State private var region: MKCoordinateRegion = MKCoordinateRegion()
-    @State var isShowMap: Bool = false
+    @State private var postion: MapCameraPosition = .userLocation(fallback: .automatic)
     
     var body: some View {
-        if isShowMap {
-            Map(coordinateRegion: $region, showsUserLocation: true)
+        Map(position: $postion) {
+            Marker("이지디자인컴퓨터학원", systemImage: "building.fill", coordinate: .EZ)
+                .tint(.blue)
+            
+            UserAnnotation()
         }
-        
-        Button("현재 위치의 지도 보기") {
-            let manager = CLLocationManager()
-            manager.desiredAccuracy = kCLLocationAccuracyBest
-            manager.requestWhenInUseAuthorization()
-            
-            let latitude = manager.location?.coordinate.latitude
-            let longitude = manager.location?.coordinate.longitude
-            
-            region = MKCoordinateRegion(
-                
-            )
+        .mapStyle(.standard(showsTraffic: true))
+        .mapControls {
+            MapUserLocationButton()
         }
     }
 }
-
 
 #Preview {
     MapView()
