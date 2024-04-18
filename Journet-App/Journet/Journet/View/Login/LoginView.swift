@@ -1,28 +1,60 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var mail: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
         VStack {
             Spacer()
-            LHeaderView()
+            VStack(spacing: 20) {
+                LHeaderView()
+                VStack(spacing: -10) {
+                    LoginEmail(mail: self.$mail)
+                    LoginPassword(password: self.$password)
+                }
+            }
             Spacer()
-            LFooterView()
+            VStack(spacing: 0) {
+                LFooterView()
+                guestActionTextButton()
+            }
         }
         .padding(.horizontal, 40.0)
     }
 }
 
+//MARK: - Header Views
 struct LHeaderView: View {
+    let biggerText = Font.system(size: 37.5)
+    
     var body: some View {
-        Image(systemName: "person.badge.key.fill")
-            .imageScale(.large)
-            .foregroundColor(Color("MainColor"))
-        Text("로그인 페이지 예정")
+        VStack(alignment: .leading) {
+            Image(systemName: "mappin.and.ellipse")
+                .resizable()
+                .foregroundColor(Color("MainColor"))
+                .frame(width: 80, height: 90)
+                .scaledToFit()
+            VStack(alignment: .leading, spacing: 10.0) {
+                VStack(alignment: .leading, spacing: -5.0) {
+                    Text("Welcome to")
+                        .font(biggerText)
+                        .fontWeight(.bold)
+                        .fontDesign(.rounded)
+                    Text("Journet")
+                        .font(biggerText)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("MainColor"))
+                        .fontDesign(.rounded)
+                }
+                Text("일기를 통해 사람들과 소통하고 나누는 여행에 진심인 곳.")
+            }
+        }
     }
 }
 
+//MARK: - Footer Views
 struct LFooterView: View {
-    
     @State private var showTabbarView: Bool = false
     
     var body: some View {
@@ -44,6 +76,7 @@ struct LFooterView: View {
     }
 }
 
+//MARK: - Button Style
 struct LButtonPrimaryStyle: ButtonStyle {
     @Binding var isLoading: Bool
     
@@ -59,6 +92,25 @@ struct LButtonPrimaryStyle: ButtonStyle {
     }
 }
 
+//MARK: - Guest Action Text Button
+struct guestActionTextButton: View {
+    @State private var showTabbarViews: Bool = false
+    
+    var body: some View {
+        if showTabbarViews {
+            LoginView()
+                .fullScreenCover(isPresented: $showTabbarViews, content: {
+                    TabbarView()
+                })
+        }
+        
+        Button("게스트로 계속하기") {
+            showTabbarViews = true
+        }
+        .foregroundColor(Color("MainColor"))
+    }
+}
+
 //MARK: - Custom Transition
 extension AnyTransition {
     static var LmoveAndFade: AnyTransition {
@@ -68,4 +120,8 @@ extension AnyTransition {
             removal: .scale.combined(with: .opacity)
         )
     }
+}
+
+#Preview {
+    LoginView()
 }
