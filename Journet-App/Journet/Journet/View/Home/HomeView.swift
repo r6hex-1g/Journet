@@ -41,7 +41,7 @@ struct Mapdelegate: View {
 
 //MARK: - DiaryView
 struct HomeDiaryView: View {
-    let biggerText = Font.system(size: 30.0)
+    let biggerText = Font.system(size: 25)
     @State var username: String = "Journer"
     
     var body: some View {
@@ -84,7 +84,7 @@ struct HomeDiaryView: View {
 
 //MARK: - CategoryView
 struct HomecategoryView: View {
-    let biggerText = Font.system(size: 30.0)
+    let biggerText = Font.system(size: 25)
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
