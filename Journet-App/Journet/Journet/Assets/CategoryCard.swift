@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CategoryCard: View {
     
-    let normalText = Font.system(size: 20)
+    let normalText = Font.system(size: 17.5)
     
     var imoji: String
     var title: String
@@ -21,7 +21,7 @@ struct CategoryCard: View {
                     .fontDesign(.rounded)
                     .foregroundColor(Color("MainColor"))
                 Text(description)
-                    .font(.caption)
+                    .font(.caption2)
                     .foregroundColor(Color(.systemGray))
             }
             .layoutPriority(100)
