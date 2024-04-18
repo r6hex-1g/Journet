@@ -25,14 +25,13 @@ struct HomeView: View {
     }
 }
 
-
-//MARK: - Map icon
+//MARK: - Bell icon -> Notification View
 struct Mapdelegate: View {
     var body: some View {
-        NavigationLink(destination: MapView()) {
-            Image(systemName: "map.fill")
+        NavigationLink(destination: NotificationView()) {
+            Image(systemName: "bell.fill")
                 .resizable()
-                .frame(width: 20, height: 20, alignment: .center)
+                .frame(width: 20, height: 25, alignment: .center)
                 .foregroundColor(Color("MainColor"))
                 .padding()
         }

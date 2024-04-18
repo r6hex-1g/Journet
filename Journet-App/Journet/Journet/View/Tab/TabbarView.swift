@@ -7,7 +7,6 @@ struct TabbarView: View {
     }
     
     //MARK: - View Properties
-    
     @State var currentTab: Tab = .home
     @State var animatedIcons: [AnimatedIcons] = {
         var tabs: [AnimatedIcons] = []
@@ -25,11 +24,11 @@ struct TabbarView: View {
                 HomeView()
                     .tag(Tab.home)
                 
+                MapView()
+                    .tag(Tab.map)
+                
                 DiariesView()
                     .tag(Tab.diaries)
-                
-                NotificationView()
-                    .tag(Tab.notifications)
                 
                 ProfileView()
                     .tag(Tab.profiles)
@@ -103,8 +102,8 @@ extension Tab {
             return "Home"
         case .diaries:
             return "Diaries"
-        case .notifications:
-            return "Notifications"
+        case .map:
+            return "Map"
         case .profiles:
             return "Profiles"
         }
