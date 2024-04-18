@@ -10,6 +10,7 @@
 		2413DF2B2BCE79DB00CA1CDC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413DF2A2BCE79DB00CA1CDC /* Category.swift */; };
 		24207E412BD1986E00A5EFFA /* LoginEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24207E402BD1986E00A5EFFA /* LoginEmail.swift */; };
 		24207E432BD1995D00A5EFFA /* LoginPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24207E422BD1995D00A5EFFA /* LoginPassword.swift */; };
+		24207E452BD19D9600A5EFFA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 24207E442BD19D9600A5EFFA /* Lottie */; };
 		24819FEE2BCCCE2B00003B15 /* JournetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24819FED2BCCCE2B00003B15 /* JournetApp.swift */; };
 		24819FF02BCCCE2B00003B15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24819FEF2BCCCE2B00003B15 /* ContentView.swift */; };
 		24819FF22BCCCE2D00003B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24819FF12BCCCE2D00003B15 /* Assets.xcassets */; };
@@ -48,7 +49,6 @@
 		24ABD1172BCE52CA0089764C /* SearchingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD1162BCE52CA0089764C /* SearchingBar.swift */; };
 		24ABD11B2BCE58730089764C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD11A2BCE58730089764C /* MapView.swift */; };
 		24ABD11E2BCE5DB80089764C /* DiaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD11D2BCE5DB80089764C /* DiaryCard.swift */; };
-		24BC25CB2BD02BD3002D9EDA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 24BC25CA2BD02BD3002D9EDA /* Lottie */; };
 		24BC25DA2BD0388C002D9EDA /* AnimatedIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC25D92BD0388C002D9EDA /* AnimatedIcons.swift */; };
 		24BC25DC2BD03B9C002D9EDA /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC25DB2BD03B9C002D9EDA /* ResizableLottieView.swift */; };
 		24BC25DD2BD0466C002D9EDA /* Account.json in Resources */ = {isa = PBXBuildFile; fileRef = 24BC25D82BD031EF002D9EDA /* Account.json */; };
@@ -133,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24BC25CB2BD02BD3002D9EDA /* Lottie in Frameworks */,
+				24207E452BD19D9600A5EFFA /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +404,7 @@
 			);
 			name = Journet;
 			packageProductDependencies = (
-				24BC25CA2BD02BD3002D9EDA /* Lottie */,
+				24207E442BD19D9600A5EFFA /* Lottie */,
 			);
 			productName = Journet;
 			productReference = 24819FEA2BCCCE2B00003B15 /* Journet.app */;
@@ -835,7 +835,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		24BC25CA2BD02BD3002D9EDA /* Lottie */ = {
+		24207E442BD19D9600A5EFFA /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 24BC25C92BD02BD3002D9EDA /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
