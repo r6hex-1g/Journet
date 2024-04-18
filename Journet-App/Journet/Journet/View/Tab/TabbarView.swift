@@ -22,10 +22,8 @@ struct TabbarView: View {
     var body: some View {
         VStack(spacing: 0) {
             TabView(selection: $currentTab) {
-                VStack {
-                    HomeView()
-                        .tag(Tab.home)
-                }
+                HomeView()
+                    .tag(Tab.home)
                 
                 DiariesView()
                     .tag(Tab.diaries)
