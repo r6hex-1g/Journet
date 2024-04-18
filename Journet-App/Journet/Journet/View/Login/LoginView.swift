@@ -30,14 +30,14 @@ struct LHeaderView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Image(systemName: "mappin.and.ellipse")
+            Image(systemName: "building.2.fill")
                 .resizable()
                 .foregroundColor(Color("MainColor"))
-                .frame(width: 80, height: 90)
+                .frame(width: 80, height: 80)
                 .scaledToFit()
             VStack(alignment: .leading, spacing: 10.0) {
                 VStack(alignment: .leading, spacing: -5.0) {
-                    Text("Welcome to")
+                    Text("Login to")
                         .font(biggerText)
                         .fontWeight(.bold)
                         .fontDesign(.rounded)
@@ -47,7 +47,7 @@ struct LHeaderView: View {
                         .foregroundColor(Color("MainColor"))
                         .fontDesign(.rounded)
                 }
-                Text("일기를 통해 사람들과 소통하고 나누는 여행에 진심인 곳.")
+                Text("로그인 하고 Journet의 일기 세상으로 떠나기.")
             }
         }
     }
