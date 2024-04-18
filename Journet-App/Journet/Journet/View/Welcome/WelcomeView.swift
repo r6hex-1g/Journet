@@ -33,7 +33,7 @@ struct WelcomeView: View {
 
 //MARK: - Header
 struct WHeaderView: View {
-    let biggerText = Font.system(size: 40.0)
+    let biggerText = Font.system(size: 37.5)
     
     @State private var textAlpha = 0.0
     @State private var textScale: CGFloat = 0.4
