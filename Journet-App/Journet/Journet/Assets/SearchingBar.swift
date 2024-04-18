@@ -7,7 +7,7 @@ struct SearchingBar: View {
     
     var body: some View {
         HStack {
-            TextField("겅색하기", text: self.$text)
+            TextField("여기서 검색하기", text: self.$text)
                 .padding()
                 .padding(.horizontal, 15)
                 .background(Color(.systemGray6))
