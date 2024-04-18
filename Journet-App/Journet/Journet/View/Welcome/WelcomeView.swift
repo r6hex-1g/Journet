@@ -1,6 +1,10 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    func didLaunchBefore() {
+        UserDefaults.standard.set(false, forKey: "didLaunchBefore")
+    }
+    
     @State var isLoading = false
     
     var body: some View {

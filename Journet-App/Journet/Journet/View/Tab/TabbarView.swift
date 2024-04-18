@@ -54,7 +54,7 @@ struct TabbarView: View {
             ForEach(animatedIcons) { icon in
                 let tabColor: SwiftUI.Color = currentTab == icon.tabIcon ? (scheme == .dark ? Color("DarkMainColor") : Color("MainColor")) : .gray.opacity(0.6)
                 
-                VStack(spacing: -10) {
+                VStack(spacing: -5) {
                     ResizableLottieView(lottieView: icon.lottieView, color: tabColor)
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30, height: 50)
