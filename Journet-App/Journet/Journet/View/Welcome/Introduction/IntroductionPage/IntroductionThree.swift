@@ -4,7 +4,7 @@ struct IntroductionThree: View {
     var body: some View {
         VStack {
             Spacer()
-            I1HeaderView()
+            I3HeaderView()
             Spacer()
         }
         .padding(.horizontal, 40.0)
@@ -12,18 +12,46 @@ struct IntroductionThree: View {
 }
 
 struct I3HeaderView: View {
+    let biggerText = Font.system(size: 35.0)
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Image(systemName: "person.line.dotted.person.fill")
+            Image(systemName: "person.3.fill")
                 .resizable()
                 .foregroundColor(Color("MainColor"))
                 .frame(width: 80, height: 40)
                 .scaledToFit()
+            
             VStack(alignment: .leading, spacing: 10.0) {
                 VStack(alignment: .leading, spacing: -5.0) {
-                    Text("안뇽!")
+                    Text("Community to")
+                        .font(biggerText)
+                        .fontWeight(.bold)
+                        .fontDesign(.rounded)
+                    Text("Journey")
+                        .font(biggerText)
+                        .fontWeight(.bold)
+                        .foregroundStyle(Color("MainColor"))
+                        .fontDesign(.rounded)
+                }
+                
+                Text("다른 저너분들과 소통해보세요.")
+                    .fontWeight(.bold)
+                
+                VStack(alignment: .leading, spacing: 5) {
+                    Text("커뮤니티 공간에서 서로 일기를 나누고,")
+                        .font(.footnote)
+                    Text("저너분들만의 인생 명소를 일기를 통해 구경가고,")
+                        .font(.footnote)
+                    Text("서로의 의견이나 느낀점을 공유하고 나눌 수 있는 공간입니다.")
+                        .font(.footnote)
                 }
             }
         }
     }
 }
+
+#Preview {
+    IntroductionThree()
+}
+

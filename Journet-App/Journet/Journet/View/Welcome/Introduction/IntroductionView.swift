@@ -14,19 +14,16 @@ struct IHeader: View {
     var body: some View {
         TabView {
             IntroductionOne()
-                .padding()
                 .tabItem {
                     Image(systemName: "circle.fill")
                 }
             
             IntroductionTwo()
-                .padding()
                 .tabItem {
                     Image(systemName: "circle.fill")
                 }
             
             IntroductionThree()
-                .padding()
                 .tabItem {
                     Image(systemName: "circle.fill")
                 }
@@ -50,7 +47,7 @@ struct IButton: View {
             }
             
             if showButton {
-                Button("케어하러 가기", systemImage: "arrow.right") {
+                Button("여행일기 쓰러 가기", systemImage: "arrow.right") {
                     showLoginPage = true
                 }
                 .frame(maxWidth: .infinity)
@@ -67,4 +64,8 @@ struct IButton: View {
             }
         }
     }
+}
+
+#Preview {
+    IntroductionView()
 }
