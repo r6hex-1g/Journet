@@ -15,8 +15,10 @@
         <a href="https://github.com/r6hex-1g">라희</a>
         <a href="https://github.com/meoritdol">채연</a>
         <a href="https://github.com/RunaUXLabs">루나</a>
+        <a href="https://github.com/alswjd03">민정</a>
     </h3>
-"RunaUXLabs" has been supporter.
+"RunaUXLabs" has been supporter.<br>
+"alswjd03" has been planing supporter.
 </div>
 <br>
 <br>
