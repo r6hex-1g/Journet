@@ -27,9 +27,6 @@ struct TabbarView: View {
                 MapView()
                     .tag(Tab.map)
                 
-                DiariesView()
-                    .tag(Tab.diaries)
-                
                 ProfileView()
                     .tag(Tab.profiles)
             }
@@ -54,7 +51,7 @@ struct TabbarView: View {
                 VStack(spacing: -5) {
                     ResizableLottieView(lottieView: icon.lottieView, color: tabColor)
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 30, height: 50)
+                        .frame(width: 30, height: 45)
                     
                     Text(icon.tabIcon.title)
                         .font(.caption)
@@ -100,8 +97,6 @@ extension Tab {
         switch self {
         case .home:
             return "Home"
-        case .diaries:
-            return "Diaries"
         case .map:
             return "Map"
         case .profiles:
