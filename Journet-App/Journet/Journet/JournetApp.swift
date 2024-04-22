@@ -6,11 +6,12 @@ struct JournetApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if didLaunchBefore {
-                WelcomeView()
-            } else {
-                TabbarView()
-            }
+            //if didLaunchBefore {
+                //WelcomeView()
+            //} else {
+                //TabbarView()
+            //}
+            WelcomeView()
         }
     }
 }
