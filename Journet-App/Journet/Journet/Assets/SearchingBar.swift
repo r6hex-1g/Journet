@@ -1,7 +1,7 @@
 import SwiftUI
 
 //MARK: - Searching Bar
-struct SearchingBar: View {
+struct searchingBar: View {
     @Binding var text: String
     @State var editText: Bool = false
     

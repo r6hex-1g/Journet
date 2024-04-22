@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HHeaderView: View {
+struct hHeaderView: View {
     
     var body: some View {
         Spacer(minLength: 20)
@@ -13,5 +13,5 @@ struct HHeaderView: View {
 }
 
 #Preview {
-    HHeaderView()
+    hHeaderView()
 }
