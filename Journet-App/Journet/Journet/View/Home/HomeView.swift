@@ -2,18 +2,11 @@ import SwiftUI
 
 //MARK: - Views setup
 struct HomeView: View {
-    @State var text: String = ""
-    
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
                 hHeaderView()
                 Spacer()
-                HStack(alignment: .center, spacing: -25) {
-                    searchingBar(text: self.$text)
-                    mapdelegate()
-                        .padding()
-                }
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack {
                         Spacer(minLength: 20)
@@ -25,19 +18,6 @@ struct HomeView: View {
                     }
                 }
             }
-        }
-    }
-}
-
-//MARK: - Bell icon -> Notification View
-struct mapdelegate: View {
-    var body: some View {
-        NavigationLink(destination: NotificationView()) {
-            Image(systemName: "bell.fill")
-                .resizable()
-                .frame(width: 20, height: 23, alignment: .center)
-                .foregroundColor(Color("MainColor"))
-                .padding()
         }
     }
 }
