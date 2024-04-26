@@ -10,7 +10,6 @@
 		2413DF2B2BCE79DB00CA1CDC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413DF2A2BCE79DB00CA1CDC /* Category.swift */; };
 		24207E412BD1986E00A5EFFA /* LoginEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24207E402BD1986E00A5EFFA /* LoginEmail.swift */; };
 		24207E432BD1995D00A5EFFA /* LoginPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24207E422BD1995D00A5EFFA /* LoginPassword.swift */; };
-		244E4F9B2BD605EA001C994F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 244E4F9A2BD605EA001C994F /* Lottie */; };
 		24819FEE2BCCCE2B00003B15 /* JournetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24819FED2BCCCE2B00003B15 /* JournetApp.swift */; };
 		24819FF02BCCCE2B00003B15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24819FEF2BCCCE2B00003B15 /* ContentView.swift */; };
 		24819FF22BCCCE2D00003B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24819FF12BCCCE2D00003B15 /* Assets.xcassets */; };
@@ -53,6 +52,8 @@
 		24BC25DC2BD03B9C002D9EDA /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC25DB2BD03B9C002D9EDA /* ResizableLottieView.swift */; };
 		24BC25DD2BD0466C002D9EDA /* Account.json in Resources */ = {isa = PBXBuildFile; fileRef = 24BC25D82BD031EF002D9EDA /* Account.json */; };
 		24BC25DF2BD0466C002D9EDA /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = 24BC25D62BD031EF002D9EDA /* Home.json */; };
+		24C8EA422BD808DE00A3F226 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 24C8EA412BD808DE00A3F226 /* Lottie */; };
+		24C8EA442BD80AE300A3F226 /* HeaderWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C8EA432BD80AE300A3F226 /* HeaderWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		24BC25D82BD031EF002D9EDA /* Account.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Account.json; sourceTree = "<group>"; };
 		24BC25D92BD0388C002D9EDA /* AnimatedIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIcons.swift; sourceTree = "<group>"; };
 		24BC25DB2BD03B9C002D9EDA /* ResizableLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLottieView.swift; sourceTree = "<group>"; };
+		24C8EA432BD80AE300A3F226 /* HeaderWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				244E4F9B2BD605EA001C994F /* Lottie in Frameworks */,
+				24C8EA422BD808DE00A3F226 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +171,7 @@
 		24819FE12BCCCE2B00003B15 = {
 			isa = PBXGroup;
 			children = (
-				24BC25D42BD031E1002D9EDA /* Tab Icons */,
+				24DC1D692BD8B812004AD50C /* Resources */,
 				24819FEC2BCCCE2B00003B15 /* Journet */,
 				2481A00A2BCCD1E200003B15 /* DynamicIslandWidget */,
 				2481A0052BCCD1E100003B15 /* Frameworks */,
@@ -288,6 +290,7 @@
 				24DA8A0D2BCCE6C2008DF8C9 /* Notifications */,
 				24A09C1A2BCD1FCC0080C29C /* HHeaderView.swift */,
 				24A09C1C2BCD1FE90080C29C /* HomeView.swift */,
+				24C8EA432BD80AE300A3F226 /* HeaderWeatherView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -373,7 +376,8 @@
 				249C99312BD10A5E00A96CAE /* world_globe.json */,
 				24BC25D62BD031EF002D9EDA /* Home.json */,
 			);
-			path = "Tab Icons";
+			name = "Tab Icons";
+			path = "../Tab Icons";
 			sourceTree = "<group>";
 		};
 		24DA8A0D2BCCE6C2008DF8C9 /* Notifications */ = {
@@ -383,6 +387,14 @@
 				24A09C172BCD1FA10080C29C /* NotificationsView.swift */,
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		24DC1D692BD8B812004AD50C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24BC25D42BD031E1002D9EDA /* Tab Icons */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,7 +416,7 @@
 			);
 			name = Journet;
 			packageProductDependencies = (
-				244E4F9A2BD605EA001C994F /* Lottie */,
+				24C8EA412BD808DE00A3F226 /* Lottie */,
 			);
 			productName = Journet;
 			productReference = 24819FEA2BCCCE2B00003B15 /* Journet.app */;
@@ -502,6 +514,7 @@
 				24A3E5122BCFE5D400D0BE57 /* CategoryCard.swift in Sources */,
 				24A09C332BCD212E0080C29C /* IntroductionTwo.swift in Sources */,
 				24A09C162BCD1F660080C29C /* NHeaderView.swift in Sources */,
+				24C8EA442BD80AE300A3F226 /* HeaderWeatherView.swift in Sources */,
 				24A09C182BCD1FA10080C29C /* NotificationsView.swift in Sources */,
 				24A09C2A2BCD20B30080C29C /* WelcomeView.swift in Sources */,
 				2481A0262BCCD26600003B15 /* TabbarView.swift in Sources */,
@@ -695,7 +708,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.05;
 				PRODUCT_BUNDLE_IDENTIFIER = rahee.Journet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -728,7 +741,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.05;
 				PRODUCT_BUNDLE_IDENTIFIER = rahee.Journet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -835,7 +848,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		244E4F9A2BD605EA001C994F /* Lottie */ = {
+		24C8EA412BD808DE00A3F226 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 24BC25C92BD02BD3002D9EDA /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
