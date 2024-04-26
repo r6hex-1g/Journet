@@ -48,6 +48,7 @@
 		24ABD1172BCE52CA0089764C /* SearchingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD1162BCE52CA0089764C /* SearchingBar.swift */; };
 		24ABD11B2BCE58730089764C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD11A2BCE58730089764C /* MapView.swift */; };
 		24ABD11E2BCE5DB80089764C /* DiaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD11D2BCE5DB80089764C /* DiaryCard.swift */; };
+		24AF12972BDB3ED0001E7B95 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 24AF12962BDB3ED0001E7B95 /* .gitignore */; };
 		24BC25DA2BD0388C002D9EDA /* AnimatedIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC25D92BD0388C002D9EDA /* AnimatedIcons.swift */; };
 		24BC25DC2BD03B9C002D9EDA /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC25DB2BD03B9C002D9EDA /* ResizableLottieView.swift */; };
 		24BC25DD2BD0466C002D9EDA /* Account.json in Resources */ = {isa = PBXBuildFile; fileRef = 24BC25D82BD031EF002D9EDA /* Account.json */; };
@@ -123,6 +124,7 @@
 		24ABD1162BCE52CA0089764C /* SearchingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingBar.swift; sourceTree = "<group>"; };
 		24ABD11A2BCE58730089764C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		24ABD11D2BCE5DB80089764C /* DiaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCard.swift; sourceTree = "<group>"; };
+		24AF12962BDB3ED0001E7B95 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		24BC25D62BD031EF002D9EDA /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
 		24BC25D82BD031EF002D9EDA /* Account.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Account.json; sourceTree = "<group>"; };
 		24BC25D92BD0388C002D9EDA /* AnimatedIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIcons.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		24819FE12BCCCE2B00003B15 = {
 			isa = PBXGroup;
 			children = (
+				24AF12962BDB3ED0001E7B95 /* .gitignore */,
 				24DC1D692BD8B812004AD50C /* Resources */,
 				24819FEC2BCCCE2B00003B15 /* Journet */,
 				2481A00A2BCCD1E200003B15 /* DynamicIslandWidget */,
@@ -485,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24BC25DD2BD0466C002D9EDA /* Account.json in Resources */,
+				24AF12972BDB3ED0001E7B95 /* .gitignore in Resources */,
 				24BC25DF2BD0466C002D9EDA /* Home.json in Resources */,
 				249C99392BD110E500A96CAE /* Book.json in Resources */,
 				24819FF52BCCCE2D00003B15 /* Preview Assets.xcassets in Resources */,
