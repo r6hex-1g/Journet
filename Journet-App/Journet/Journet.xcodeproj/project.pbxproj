@@ -377,8 +377,8 @@
 				24BC25D62BD031EF002D9EDA /* Home.json */,
 			);
 			name = "Tab Icons";
-			path = "../Tab Icons";
-			sourceTree = "<group>";
+			path = "/Users/kingrahyi/Desktop/Rahyi/Coding/Journet/Journet-App/Journet/Resources/Tab Icons";
+			sourceTree = "<absolute>";
 		};
 		24DA8A0D2BCCE6C2008DF8C9 /* Notifications */ = {
 			isa = PBXGroup;
