@@ -33,7 +33,6 @@ struct WelcomeView: View {
 
 //MARK: - Header
 struct WHeaderView: View {
-    let biggerText = Font.system(size: 37.5)
     
     @State private var textAlpha = 0.0
     @State private var textScale: CGFloat = 0.4
@@ -47,17 +46,19 @@ struct WHeaderView: View {
                 .scaledToFit()
             VStack(alignment: .leading, spacing: 10.0) {
                 VStack(alignment: .leading, spacing: -5.0) {
-                    Text("Welcome to")
-                        .font(biggerText)
-                        .fontWeight(.bold)
-                        .fontDesign(.rounded)
-                    Text("Journet")
-                        .font(biggerText)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color("MainColor"))
-                        .fontDesign(.rounded)
+                    HStack(spacing: 3) {
+                        Text("Journet")
+                            .font(.Hanbit37)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("MainColor"))
+                        Text("에 오신걸,")
+                            .font(.Hanbit37)
+                    }
+                    Text("진심으로 환영해요!")
+                        .font(.Hanbit37)
                 }
                 Text("일기를 통해 사람들과 소통하고 나누는 여행에 진심인 곳.")
+                    .font(.Hanbit15)
             }
         }
         .opacity(textAlpha)
