@@ -56,9 +56,9 @@
 		24BC25DC2BD03B9C002D9EDA /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC25DB2BD03B9C002D9EDA /* ResizableLottieView.swift */; };
 		24BC25DD2BD0466C002D9EDA /* Account.json in Resources */ = {isa = PBXBuildFile; fileRef = 24BC25D82BD031EF002D9EDA /* Account.json */; };
 		24BC25DF2BD0466C002D9EDA /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = 24BC25D62BD031EF002D9EDA /* Home.json */; };
-		24BFAA022BDF37E50046F7A3 /* KCC-Hanbit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24BFAA012BDF37E50046F7A3 /* KCC-Hanbit.ttf */; };
 		24C8EA422BD808DE00A3F226 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 24C8EA412BD808DE00A3F226 /* Lottie */; };
 		24C8EA442BD80AE300A3F226 /* HeaderWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C8EA432BD80AE300A3F226 /* HeaderWeatherView.swift */; };
+		24EF7BC92BDF8C0100B992F3 /* KCC-Hanbit.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24EF7BC82BDF8C0100B992F3 /* KCC-Hanbit.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,8 +136,8 @@
 		24BC25D82BD031EF002D9EDA /* Account.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Account.json; sourceTree = "<group>"; };
 		24BC25D92BD0388C002D9EDA /* AnimatedIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIcons.swift; sourceTree = "<group>"; };
 		24BC25DB2BD03B9C002D9EDA /* ResizableLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLottieView.swift; sourceTree = "<group>"; };
-		24BFAA012BDF37E50046F7A3 /* KCC-Hanbit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KCC-Hanbit.ttf"; sourceTree = "<group>"; };
 		24C8EA432BD80AE300A3F226 /* HeaderWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWeatherView.swift; sourceTree = "<group>"; };
+		24EF7BC82BDF8C0100B992F3 /* KCC-Hanbit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KCC-Hanbit.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,7 +393,7 @@
 		24AF129A2BDB7F8E001E7B95 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				24BFAA012BDF37E50046F7A3 /* KCC-Hanbit.ttf */,
+				24EF7BC82BDF8C0100B992F3 /* KCC-Hanbit.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -515,8 +515,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24BFAA022BDF37E50046F7A3 /* KCC-Hanbit.ttf in Resources */,
 				24BC25DD2BD0466C002D9EDA /* Account.json in Resources */,
+				24EF7BC92BDF8C0100B992F3 /* KCC-Hanbit.otf in Resources */,
 				24AF12972BDB3ED0001E7B95 /* .gitignore in Resources */,
 				24BC25DF2BD0466C002D9EDA /* Home.json in Resources */,
 				249C99392BD110E500A96CAE /* Book.json in Resources */,
