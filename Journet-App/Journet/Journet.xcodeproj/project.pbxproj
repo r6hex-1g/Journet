@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2413DF2B2BCE79DB00CA1CDC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413DF2A2BCE79DB00CA1CDC /* Category.swift */; };
+		24150F2D2BDB9A54000A6272 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24150F2C2BDB9A53000A6272 /* CustomFont.swift */; };
+		24150F2E2BDB9A54000A6272 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24150F2C2BDB9A53000A6272 /* CustomFont.swift */; };
 		24207E412BD1986E00A5EFFA /* LoginEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24207E402BD1986E00A5EFFA /* LoginEmail.swift */; };
 		24207E432BD1995D00A5EFFA /* LoginPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24207E422BD1995D00A5EFFA /* LoginPassword.swift */; };
 		24819FEE2BCCCE2B00003B15 /* JournetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24819FED2BCCCE2B00003B15 /* JournetApp.swift */; };
@@ -49,10 +51,12 @@
 		24ABD11B2BCE58730089764C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD11A2BCE58730089764C /* MapView.swift */; };
 		24ABD11E2BCE5DB80089764C /* DiaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABD11D2BCE5DB80089764C /* DiaryCard.swift */; };
 		24AF12972BDB3ED0001E7B95 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 24AF12962BDB3ED0001E7B95 /* .gitignore */; };
+		24AF12992BDB3FB5001E7B95 /* KeyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24AF12982BDB3FB5001E7B95 /* KeyList.plist */; };
 		24BC25DA2BD0388C002D9EDA /* AnimatedIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC25D92BD0388C002D9EDA /* AnimatedIcons.swift */; };
 		24BC25DC2BD03B9C002D9EDA /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC25DB2BD03B9C002D9EDA /* ResizableLottieView.swift */; };
 		24BC25DD2BD0466C002D9EDA /* Account.json in Resources */ = {isa = PBXBuildFile; fileRef = 24BC25D82BD031EF002D9EDA /* Account.json */; };
 		24BC25DF2BD0466C002D9EDA /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = 24BC25D62BD031EF002D9EDA /* Home.json */; };
+		24BFAA022BDF37E50046F7A3 /* KCC-Hanbit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24BFAA012BDF37E50046F7A3 /* KCC-Hanbit.ttf */; };
 		24C8EA422BD808DE00A3F226 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 24C8EA412BD808DE00A3F226 /* Lottie */; };
 		24C8EA442BD80AE300A3F226 /* HeaderWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C8EA432BD80AE300A3F226 /* HeaderWeatherView.swift */; };
 /* End PBXBuildFile section */
@@ -83,6 +87,8 @@
 
 /* Begin PBXFileReference section */
 		2413DF2A2BCE79DB00CA1CDC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		24150F242BDB98E5000A6272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		24150F2C2BDB9A53000A6272 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		24207E402BD1986E00A5EFFA /* LoginEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmail.swift; sourceTree = "<group>"; };
 		24207E422BD1995D00A5EFFA /* LoginPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPassword.swift; sourceTree = "<group>"; };
 		24819FEA2BCCCE2B00003B15 /* Journet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,10 +131,12 @@
 		24ABD11A2BCE58730089764C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		24ABD11D2BCE5DB80089764C /* DiaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCard.swift; sourceTree = "<group>"; };
 		24AF12962BDB3ED0001E7B95 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		24AF12982BDB3FB5001E7B95 /* KeyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = KeyList.plist; sourceTree = "<group>"; };
 		24BC25D62BD031EF002D9EDA /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
 		24BC25D82BD031EF002D9EDA /* Account.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Account.json; sourceTree = "<group>"; };
 		24BC25D92BD0388C002D9EDA /* AnimatedIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIcons.swift; sourceTree = "<group>"; };
 		24BC25DB2BD03B9C002D9EDA /* ResizableLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLottieView.swift; sourceTree = "<group>"; };
+		24BFAA012BDF37E50046F7A3 /* KCC-Hanbit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KCC-Hanbit.ttf"; sourceTree = "<group>"; };
 		24C8EA432BD80AE300A3F226 /* HeaderWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +169,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		24150F2B2BDB9A3C000A6272 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				24150F2C2BDB9A53000A6272 /* CustomFont.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		24207E3F2BD1984400A5EFFA /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +189,6 @@
 		24819FE12BCCCE2B00003B15 = {
 			isa = PBXGroup;
 			children = (
-				24AF12962BDB3ED0001E7B95 /* .gitignore */,
 				24DC1D692BD8B812004AD50C /* Resources */,
 				24819FEC2BCCCE2B00003B15 /* Journet */,
 				2481A00A2BCCD1E200003B15 /* DynamicIslandWidget */,
@@ -201,6 +216,9 @@
 				24819FEF2BCCCE2B00003B15 /* ContentView.swift */,
 				24819FF12BCCCE2D00003B15 /* Assets.xcassets */,
 				24819FF82BCCCE2D00003B15 /* Journet.xcdatamodeld */,
+				24AF12962BDB3ED0001E7B95 /* .gitignore */,
+				24150F242BDB98E5000A6272 /* Info.plist */,
+				24AF12982BDB3FB5001E7B95 /* KeyList.plist */,
 				24819FF32BCCCE2D00003B15 /* Preview Content */,
 			);
 			path = Journet;
@@ -239,6 +257,7 @@
 		2481A01E2BCCD20500003B15 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				24150F2B2BDB9A3C000A6272 /* Font */,
 				2413DF292BCE79C800CA1CDC /* Home */,
 				24A09C3B2BCD25AC0080C29C /* Diaries */,
 				2481A01F2BCCD20D00003B15 /* Tab */,
@@ -371,6 +390,14 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		24AF129A2BDB7F8E001E7B95 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				24BFAA012BDF37E50046F7A3 /* KCC-Hanbit.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		24BC25D42BD031E1002D9EDA /* Tab Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +422,7 @@
 		24DC1D692BD8B812004AD50C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				24AF129A2BDB7F8E001E7B95 /* Font */,
 				24BC25D42BD031E1002D9EDA /* Tab Icons */,
 			);
 			path = Resources;
@@ -487,10 +515,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BFAA022BDF37E50046F7A3 /* KCC-Hanbit.ttf in Resources */,
 				24BC25DD2BD0466C002D9EDA /* Account.json in Resources */,
 				24AF12972BDB3ED0001E7B95 /* .gitignore in Resources */,
 				24BC25DF2BD0466C002D9EDA /* Home.json in Resources */,
 				249C99392BD110E500A96CAE /* Book.json in Resources */,
+				24AF12992BDB3FB5001E7B95 /* KeyList.plist in Resources */,
 				24819FF52BCCCE2D00003B15 /* Preview Assets.xcassets in Resources */,
 				249C99322BD10A5E00A96CAE /* world_globe.json in Resources */,
 				24819FF22BCCCE2D00003B15 /* Assets.xcassets in Resources */,
@@ -518,6 +548,7 @@
 				24A3E5122BCFE5D400D0BE57 /* CategoryCard.swift in Sources */,
 				24A09C332BCD212E0080C29C /* IntroductionTwo.swift in Sources */,
 				24A09C162BCD1F660080C29C /* NHeaderView.swift in Sources */,
+				24150F2D2BDB9A54000A6272 /* CustomFont.swift in Sources */,
 				24C8EA442BD80AE300A3F226 /* HeaderWeatherView.swift in Sources */,
 				24A09C182BCD1FA10080C29C /* NotificationsView.swift in Sources */,
 				24A09C2A2BCD20B30080C29C /* WelcomeView.swift in Sources */,
@@ -551,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24150F2E2BDB9A54000A6272 /* CustomFont.swift in Sources */,
 				24A09C472BCD27B40080C29C /* DynamicIslandWidgetBundle.swift in Sources */,
 				2481A0102BCCD1E200003B15 /* DynamicIslandWidget.swift in Sources */,
 				2481A0122BCCD1E200003B15 /* AppIntent.swift in Sources */,
@@ -700,6 +732,7 @@
 				DEVELOPMENT_TEAM = 48CD968PJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Journet/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
@@ -733,6 +766,7 @@
 				DEVELOPMENT_TEAM = 48CD968PJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Journet/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
