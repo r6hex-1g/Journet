@@ -1,1 +1,36 @@
 @charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  width: 100%;
+  height: 200px;
+}
+
+.icons {
+  width: 100%;
+  height: 300px;
+}
+
+.myListUp {
+  width: 100%;
+  height: 500px;
+}
+
+.mapView {
+  width: 100%;
+  height: 500px;
+}
+
+.Map {
+  width: 90%;
+  height: 400px;
+}
+
+.hotPlace {
+  width: 100%;
+  height: 500px;
+}
