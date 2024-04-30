@@ -12,7 +12,6 @@ struct IntroductionThree: View {
 }
 
 struct I3HeaderView: View {
-    let biggerText = Font.system(size: 35.0)
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -23,28 +22,31 @@ struct I3HeaderView: View {
                 .scaledToFit()
             
             VStack(alignment: .leading, spacing: 10.0) {
-                VStack(alignment: .leading, spacing: -5.0) {
-                    Text("Community to")
-                        .font(biggerText)
-                        .fontWeight(.bold)
-                        .fontDesign(.rounded)
-                    Text("Journey")
-                        .font(biggerText)
-                        .fontWeight(.bold)
-                        .foregroundStyle(Color("MainColor"))
-                        .fontDesign(.rounded)
+                VStack(alignment: .leading, spacing: 1) {
+                    Text("서로가 일기로")
+                        .font(.Hanbit37)
+                    HStack(spacing: 2) {
+                        Text("소통")
+                            .font(.Hanbit37)
+                            .foregroundStyle(Color("MainColor"))
+                        Text("하는 공간.")
+                            .font(.Hanbit37)
+                    }
                 }
                 
                 Text("다른 저너분들과 소통해보세요.")
-                    .fontWeight(.bold)
+                    .font(.Hanbit20)
                 
                 VStack(alignment: .leading, spacing: 5) {
                     Text("커뮤니티 공간에서 서로 일기를 나누고,")
-                        .font(.footnote)
+                        .font(.Hanbit15)
+                        .opacity(0.8)
                     Text("저너분들만의 인생 명소를 일기를 통해 구경가고,")
-                        .font(.footnote)
+                        .font(.Hanbit15)
+                        .opacity(0.8)
                     Text("서로의 의견이나 느낀점을 공유하고 나눌 수 있는 공간입니다.")
-                        .font(.footnote)
+                        .font(.Hanbit15)
+                        .opacity(0.8)
                 }
             }
         }
