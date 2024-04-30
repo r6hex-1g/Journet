@@ -56,9 +56,10 @@
 		24BC25DC2BD03B9C002D9EDA /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC25DB2BD03B9C002D9EDA /* ResizableLottieView.swift */; };
 		24BC25DD2BD0466C002D9EDA /* Account.json in Resources */ = {isa = PBXBuildFile; fileRef = 24BC25D82BD031EF002D9EDA /* Account.json */; };
 		24BC25DF2BD0466C002D9EDA /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = 24BC25D62BD031EF002D9EDA /* Home.json */; };
-		24BFAA022BDF37E50046F7A3 /* KCC-Hanbit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24BFAA012BDF37E50046F7A3 /* KCC-Hanbit.ttf */; };
 		24C8EA422BD808DE00A3F226 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 24C8EA412BD808DE00A3F226 /* Lottie */; };
 		24C8EA442BD80AE300A3F226 /* HeaderWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C8EA432BD80AE300A3F226 /* HeaderWeatherView.swift */; };
+		24EF7BC92BDF8C0100B992F3 /* KCC-Hanbit.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24EF7BC82BDF8C0100B992F3 /* KCC-Hanbit.otf */; };
+		24EF7BCB2BDF9AA400B992F3 /* DiaryBigCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF7BCA2BDF9AA400B992F3 /* DiaryBigCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,8 +137,9 @@
 		24BC25D82BD031EF002D9EDA /* Account.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Account.json; sourceTree = "<group>"; };
 		24BC25D92BD0388C002D9EDA /* AnimatedIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIcons.swift; sourceTree = "<group>"; };
 		24BC25DB2BD03B9C002D9EDA /* ResizableLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLottieView.swift; sourceTree = "<group>"; };
-		24BFAA012BDF37E50046F7A3 /* KCC-Hanbit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KCC-Hanbit.ttf"; sourceTree = "<group>"; };
 		24C8EA432BD80AE300A3F226 /* HeaderWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWeatherView.swift; sourceTree = "<group>"; };
+		24EF7BC82BDF8C0100B992F3 /* KCC-Hanbit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KCC-Hanbit.otf"; sourceTree = "<group>"; };
+		24EF7BCA2BDF9AA400B992F3 /* DiaryBigCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryBigCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,10 +367,10 @@
 		24A09C372BCD217B0080C29C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				24EF7BCC2BDF9AAC00B992F3 /* DiaryCard */,
 				24207E3F2BD1984400A5EFFA /* Login */,
 				24A09C392BCD219B0080C29C /* ButtonPrimaryStyle.swift */,
 				24ABD1162BCE52CA0089764C /* SearchingBar.swift */,
-				24ABD11D2BCE5DB80089764C /* DiaryCard.swift */,
 				24A3E5112BCFE5D400D0BE57 /* CategoryCard.swift */,
 			);
 			path = Assets;
@@ -393,7 +395,7 @@
 		24AF129A2BDB7F8E001E7B95 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				24BFAA012BDF37E50046F7A3 /* KCC-Hanbit.ttf */,
+				24EF7BC82BDF8C0100B992F3 /* KCC-Hanbit.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -426,6 +428,15 @@
 				24BC25D42BD031E1002D9EDA /* Tab Icons */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		24EF7BCC2BDF9AAC00B992F3 /* DiaryCard */ = {
+			isa = PBXGroup;
+			children = (
+				24EF7BCA2BDF9AA400B992F3 /* DiaryBigCard.swift */,
+				24ABD11D2BCE5DB80089764C /* DiaryCard.swift */,
+			);
+			path = DiaryCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,8 +526,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24BFAA022BDF37E50046F7A3 /* KCC-Hanbit.ttf in Resources */,
 				24BC25DD2BD0466C002D9EDA /* Account.json in Resources */,
+				24EF7BC92BDF8C0100B992F3 /* KCC-Hanbit.otf in Resources */,
 				24AF12972BDB3ED0001E7B95 /* .gitignore in Resources */,
 				24BC25DF2BD0466C002D9EDA /* Home.json in Resources */,
 				249C99392BD110E500A96CAE /* Book.json in Resources */,
@@ -548,6 +559,7 @@
 				24A3E5122BCFE5D400D0BE57 /* CategoryCard.swift in Sources */,
 				24A09C332BCD212E0080C29C /* IntroductionTwo.swift in Sources */,
 				24A09C162BCD1F660080C29C /* NHeaderView.swift in Sources */,
+				24EF7BCB2BDF9AA400B992F3 /* DiaryBigCard.swift in Sources */,
 				24150F2D2BDB9A54000A6272 /* CustomFont.swift in Sources */,
 				24C8EA442BD80AE300A3F226 /* HeaderWeatherView.swift in Sources */,
 				24A09C182BCD1FA10080C29C /* NotificationsView.swift in Sources */,

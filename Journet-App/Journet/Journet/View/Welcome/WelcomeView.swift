@@ -58,7 +58,7 @@ struct WHeaderView: View {
                         .font(.Hanbit37)
                 }
                 Text("일기를 통해 사람들과 소통하고 나누는 여행에 진심인 곳.")
-                    .font(.Hanbit15)
+                    .font(.Hanbit17)
             }
         }
         .opacity(textAlpha)
@@ -82,14 +82,14 @@ struct WFooterView: View {
             VStack(spacing: 20.0) {
                 Text("Journet 앱은 사용자의 개인정보를 중요하게 생각하고 관리합니다. 아래 버튼을 누름으로써 개인정보 수집에 동의하시는 것으로 보고, 앱 사용시에 수집하는 개인정보에 대해 개발자는 엄격히 관리함을 확인합니다. 광고 추적과 같은 기능적인 수집 데이터는 설정에서 변경 가능합니다.")
                     .multilineTextAlignment(.center)
-                    .font(.caption)
+                    .font(.Hanbit12)
                     .foregroundColor(.gray)
                 
                 Button("개인정보 수집에 관한 내용 확인하기") {
                     //
                 }
                 .bold()
-                .font(.caption)
+                .font(.Hanbit12)
                 .foregroundColor(Color("MainColor"))
             }
             .padding(.horizontal, 10.0)
@@ -109,6 +109,7 @@ struct WFooterView: View {
                 .buttonStyle(ButtonPrimaryStyle.init(isLoading: .constant(false)))
                 .padding(.vertical, 20.0)
                 .transition(.moveAndFade)
+                .font(.Hanbit17)
             }
         }
         .onAppear {

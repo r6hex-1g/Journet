@@ -13,7 +13,6 @@ struct IntroductionOne: View {
 
 //MARK: - Header Views
 struct I1HeaderView: View {
-    let biggerText = Font.system(size: 35.0)
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -25,19 +24,21 @@ struct I1HeaderView: View {
             
             VStack(alignment: .leading, spacing: 10.0) {
                 VStack(alignment: .leading, spacing: -5.0) {
-                    Text("Write to")
-                        .font(biggerText)
-                        .fontWeight(.bold)
-                        .fontDesign(.rounded)
-                    Text("Journey")
-                        .font(biggerText)
-                        .fontWeight(.bold)
-                        .foregroundStyle(Color("MainColor"))
-                        .fontDesign(.rounded)
+                    HStack(spacing: 3) {
+                        Text("당신만의 ")
+                            .font(.Hanbit37)
+                        Text("일기")
+                            .font(.Hanbit37)
+                            .foregroundStyle(Color("MainColor"))
+                        Text("를")
+                            .font(.Hanbit37)
+                    }
+                    Text("세상에 기록하기.")
+                        .font(.Hanbit37)
                 }
                 
                 Text("나만의 일기를 써보새요.")
-                    .fontWeight(.bold)
+                    .font(.Hanbit20)
                 
                 VStack(alignment: .leading, spacing: 5) {
                     Text("평소와는 다른 공간에서의 일기를 저장하고,")

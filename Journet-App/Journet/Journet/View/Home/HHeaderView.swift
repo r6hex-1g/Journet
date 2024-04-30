@@ -4,11 +4,14 @@ struct hHeaderView: View {
     @State var text: String = ""
     
     var body: some View {
-        headerTextView()
-        HStack(alignment: .center, spacing: -25) {
-            searchingBar(text: self.$text)
-            mapdelegate()
-                .padding()
+        VStack(alignment: .leading, spacing: 5) {
+            headerTextView()
+                .padding(.horizontal, 40)
+            HStack(alignment: .center, spacing: -25) {
+                searchingBar(text: self.$text)
+                mapdelegate()
+                    .padding()
+            }
         }
     }
 }
@@ -18,10 +21,10 @@ struct headerTextView: View {
     var body: some View {
         
         Spacer(minLength: 20)
-        VStack(alignment: .center, spacing: 0) {
+        VStack(alignment: .leading) {
             Text("Journet")
-                .fontWeight(.bold)
-                .fontDesign(.rounded)
+                .font(.Hanbit20)
+                .foregroundColor(Color("MainColor"))
         }
     }
 }
