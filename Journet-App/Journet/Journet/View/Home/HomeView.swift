@@ -36,7 +36,7 @@ struct homeDiaryView: View {
                     Circle()
                         .fill(Color("MainColor"))
                         .frame(width: 8, height: 8)
-                        .position(x: 3, y: 22)
+                        .position(x: 3, y: 20)
                 }
                 .padding(.leading, 10)
             }
