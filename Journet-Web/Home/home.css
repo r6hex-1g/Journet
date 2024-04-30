@@ -10,14 +10,9 @@
   height: 200px;
 }
 
-.icons {
+.searchBar {
   width: 100%;
   height: 300px;
-}
-
-.myListUp {
-  width: 100%;
-  height: 500px;
 }
 
 .mapView {
@@ -27,10 +22,15 @@
 
 #map {
   display: block;
-  width: 90%;
+  width: 95%;
   height: 600px;
   position: relative;
-  left: 100px;
+  left: 50px;
+}
+
+.myListUp {
+  width: 100%;
+  height: 500px;
 }
 
 .hotPlace {
