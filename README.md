@@ -8,6 +8,10 @@
     📅 : 2024. 03. 28. ~
     <br>
     <br>
+    🖥️ : Beta Ver.0.07<br>
+    📱 : Beta Ver.0.07
+    <br>
+    <br>
     <b>해당 사이트들을 조금씩 참고해서 만들었습니다! ✨</b><br>
     <a href="https://jinjja-seoul.com/">진짜서울</a>, <a href="https://www.myro.co.kr/">MYRO</a>, <a href="https://www.ecomuseum.kr/main.do">경기에코뮤지엄</a>, <a href="https://www.apple.com/kr/">애플</a>
 </div>
