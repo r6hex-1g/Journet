@@ -23,7 +23,7 @@ struct I1HeaderView: View {
                 .scaledToFit()
             
             VStack(alignment: .leading, spacing: 10.0) {
-                VStack(alignment: .leading, spacing: -5.0) {
+                VStack(alignment: .leading, spacing: 1) {
                     HStack(spacing: 3) {
                         Text("당신만의 ")
                             .font(.Hanbit37)
@@ -42,11 +42,14 @@ struct I1HeaderView: View {
                 
                 VStack(alignment: .leading, spacing: 5) {
                     Text("평소와는 다른 공간에서의 일기를 저장하고,")
-                        .font(.footnote)
+                        .font(.Hanbit15)
+                        .opacity(0.8)
                     Text("그 일기에서 그 날에 대한 감정들을 저잘하고,")
-                        .font(.footnote)
+                        .font(.Hanbit15)
+                        .opacity(0.8)
                     Text("언제든 필요하다면 꺼내보고 추억을 회상할 수 있도록 도와주기도 하는 공간입니다.")
-                        .font(.footnote)
+                        .font(.Hanbit15)
+                        .opacity(0.8)
                 }
             }
         }
