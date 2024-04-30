@@ -50,6 +50,7 @@ struct IButton: View {
                 Button("여행일기 쓰러 가기", systemImage: "arrow.right") {
                     showLoginPage = true
                 }
+                .font(.Hanbit15)
                 .frame(maxWidth: .infinity)
                 .buttonStyle(ButtonPrimaryStyle.init(isLoading: .constant(false)))
                 .padding(.vertical, 20.0)
