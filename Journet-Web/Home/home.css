@@ -2,7 +2,6 @@
 
 /* 폰트 추가 */
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
 .notosanskr * {
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -13,15 +12,18 @@
   padding: 0px;
 }
 
+
 .header {
   display: flex;
   width: 100%;
   height: 80px;
   background-color: darkgray;
   opacity: 50%;
+
+  padding-top: 150px;
 }
 
-.ssearchSection {
+.searchSection {
   width: 100%;
   height: 300px;
   background-color: darkgray;
@@ -53,4 +55,42 @@
   width: 100%;
   height: 500px;
   background-color: darkgray;
+  align-items: center;
+}
+
+
+/* 상부 메뉴 */
+.top_manu {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 145px;
+  background-color: darkgray;
+  align-content: center;
+}
+
+.top_manu .inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 50px;
+}
+
+/* 로고 위치 */
+.top_manu .inner .left {
+  /* background-color: rgb(172, 109, 89); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+/* 메뉴 위치 */
+.top_manu .inner .right {
+  /* background-color: rgb(114, 58, 40); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
 }
