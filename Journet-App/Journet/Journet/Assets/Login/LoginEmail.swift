@@ -9,6 +9,7 @@ struct LoginEmail: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             TextField("계정 이름이나 ID", text: self.$mail)
+                .font(.Hanbit15)
                 .padding()
                 .padding(.horizontal, 20)
                 .background(Color(.systemGray6))

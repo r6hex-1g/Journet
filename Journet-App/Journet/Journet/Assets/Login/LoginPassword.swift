@@ -9,6 +9,7 @@ struct LoginPassword: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             SecureField("비밀번호", text: self.$password)
+                .font(.Hanbit15)
                 .padding()
                 .padding(.horizontal, 20)
                 .background(Color(.systemGray6))

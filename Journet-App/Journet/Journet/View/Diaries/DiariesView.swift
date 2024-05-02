@@ -84,9 +84,9 @@ struct myDiaryListView: View {
             
             ScrollView(.horizontal) {
                     HStack(spacing: 30) {
-                        DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희", date: "2024.04.22.")
-                        DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희", date: "2024.04.22.")
-                        DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희", date: "2024.04.22.")
+                        DiaryCard(image: "Card1", title: "제목", tag: "라희", date: "2024.04.22.")
+                        DiaryCard(image: "Card1", title: "제목", tag: "라희", date: "2024.04.22.")
+                        DiaryCard(image: "Card1", title: "제목", tag: "라희", date: "2024.04.22.")
                     }
                     .padding(.leading)
                 }
@@ -127,9 +127,9 @@ struct theyDiaryListView: View {
             
             ScrollView(.horizontal) {
                     HStack(spacing: 30) {
-                        DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희", date: "2024.04.22.")
-                        DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희", date: "2024.04.22.")
-                        DiaryCard(image: "Card1", title: "제목", desciption: "요약", author: "라희", date: "2024.04.22.")
+                        DiaryCard(image: "Card1", title: "제목", tag: "라희", date: "2024.04.22.")
+                        DiaryCard(image: "Card1", title: "제목", tag: "라희", date: "2024.04.22.")
+                        DiaryCard(image: "Card1", title: "제목", tag: "라희", date: "2024.04.22.")
                     }
                     .padding(.leading)
                 }

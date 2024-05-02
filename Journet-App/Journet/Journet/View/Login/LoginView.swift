@@ -37,17 +37,18 @@ struct LHeaderView: View {
                 .scaledToFit()
             VStack(alignment: .leading, spacing: 10.0) {
                 VStack(alignment: .leading, spacing: -5.0) {
-                    Text("Login to")
-                        .font(biggerText)
-                        .fontWeight(.bold)
-                        .fontDesign(.rounded)
-                    Text("Journet")
-                        .font(biggerText)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color("MainColor"))
-                        .fontDesign(.rounded)
+                    HStack(spacing: 3) {
+                        Text("Journet")
+                            .font(.Hanbit37)
+                            .foregroundColor(Color("MainColor"))
+                        Text("에")
+                            .font(.Hanbit37)
+                    }
+                    Text("로그인 하기.")
+                        .font(.Hanbit37)
                 }
                 Text("로그인 하고 Journet의 일기 세상으로 떠나기.")
+                    .font(.Hanbit23)
             }
         }
     }
@@ -73,6 +74,7 @@ struct LFooterView: View {
         .buttonStyle(ButtonPrimaryStyle.init(isLoading: .constant(false)))
         .padding(.vertical, 20.0)
         .transition(.moveAndFade)
+        .font(.Hanbit17)
     }
 }
 
@@ -108,6 +110,7 @@ struct guestActionTextButton: View {
             showTabbarViews = true
         }
         .foregroundColor(Color("MainColor"))
+        .font(.Hanbit17)
     }
 }
 

@@ -15,6 +15,8 @@ extension Font {
     static let Hanbit20: Font = .custom("KCC-Hanbit", size: 20)
     
     // caption Font
+    static let Hanbit17: Font = .custom("KCC-Hanbit", size: 17)
     static let Hanbit15: Font = .custom("KCC-Hanbit", size: 15)
+    static let Hanbit12: Font = .custom("KCC-Hanbit", size: 12.5)
     static let Hanbit10: Font = .custom("KCC-Hanbit", size: 10)
 }

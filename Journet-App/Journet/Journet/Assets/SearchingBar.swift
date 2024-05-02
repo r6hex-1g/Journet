@@ -7,11 +7,12 @@ struct searchingBar: View {
     
     var body: some View {
         HStack {
-            TextField("여기서 검색하기", text: self.$text)
+            TextField("#혼자만의_여유", text: self.$text)
                 .padding()
                 .padding(.horizontal, 15)
                 .background(Color(.systemGray6))
                 .cornerRadius(25)
+                .font(.Hanbit15)
                 .overlay(
                     HStack {
                         Spacer()
