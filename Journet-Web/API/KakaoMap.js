@@ -19,7 +19,7 @@ kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
   marker.setPosition(latlng);
 });
 
-map.setMaxLevel(8);
+map.setMaxLevel(8, { animate: true });
 map.setZoomable(true);
 map.setDraggable(true);
 
