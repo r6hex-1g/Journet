@@ -77,6 +77,7 @@
   padding: 0 50px;
 }
 
+/* 로고 위치 */
 .top_manu .inner .left {
   /* background-color: rgb(172, 109, 89); */
   display: flex;
@@ -84,6 +85,8 @@
   align-items: center;
   gap: 30px;
 }
+
+/* 메뉴 위치 */
 .top_manu .inner .right {
   /* background-color: rgb(114, 58, 40); */
   display: flex;
