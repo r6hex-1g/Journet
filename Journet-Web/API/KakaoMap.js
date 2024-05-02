@@ -13,6 +13,7 @@ var marker = new kakao.maps.Marker({
   map: map
 });
 
+// 클릭으로 마커 위치 변경
 kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
   var latlng = mouseEvent.latLng;
   marker.setPosition(latlng);
