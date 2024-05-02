@@ -27,7 +27,8 @@
         <a href="https://github.com/RunaUXLabs">루나 🌙</a> |
         <a href="https://github.com/alswjd03">민정 ✨</a> |
         <a href="https://github.com/adooooore">선정 🫑</a> |
-        <a href="https://github.com/tmfdkdmsss">은 🎀</a>
+        <a href="https://github.com/tmfdkdmsss">은 🎀</a> |
+        <a href="https://github.com/inbaseman">철구 🧐</a>
     </h3>
 </div>
 <br>
