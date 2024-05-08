@@ -12,5 +12,6 @@
 *.wasm
 *.wat
 *.xhtml
+*.env
 
 # End of https://www.toptal.com/developers/gitignore/api/web
