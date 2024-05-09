@@ -6,5 +6,4 @@ async function refrash_mappins() {
   let { data: record, error } = await client.from("Mappins").select("*");
   console.log('record', record);
 };
-
 refrash_mappins();
