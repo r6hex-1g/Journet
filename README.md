@@ -20,6 +20,21 @@
 <br>
 
 <div align="center">
+    <h1>👥 : 팀원들</h1>
+    <h3>
+        <a href="https://github.com/r6hex-1g">라희 🍑</a> |
+        <a href="https://github.com/meoritdol">채연 🍍</a> |
+        <a href="https://github.com/RunaUXLabs">루나 🌙</a> |
+        <a href="https://github.com/alswjd03">민정 ✨</a> |
+        <a href="https://github.com/adooooore">선정 🫑</a> |
+        <a href="https://github.com/tmfdkdmsss">은 🎀</a>
+    </h3>
+</div>
+<br>
+<br>
+<br>
+
+<div align="center">
     <h1>🗂️ : 파일 구조</h1>
     <div align="left">
         <pre>Journet/
@@ -37,21 +52,6 @@
     └── WriteDiary/
         </pre>
     </div>
-</div>
-<br>
-<br>
-<br>
-
-<div align="center">
-    <h1>👥 : 팀원들</h1>
-    <h3>
-        <a href="https://github.com/r6hex-1g">라희 🍑</a> |
-        <a href="https://github.com/meoritdol">채연 🍍</a> |
-        <a href="https://github.com/RunaUXLabs">루나 🌙</a> |
-        <a href="https://github.com/alswjd03">민정 ✨</a> |
-        <a href="https://github.com/adooooore">선정 🫑</a> |
-        <a href="https://github.com/tmfdkdmsss">은 🎀</a>
-    </h3>
 </div>
 <br>
 <br>
