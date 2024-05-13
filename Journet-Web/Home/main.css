@@ -64,8 +64,8 @@ header {
   position: fixed;
   z-index: 100;
   background: #F6F6F6;
-  backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
 }
 
 header .logo {
@@ -217,6 +217,9 @@ header .menu_profile:hover .fa-face-meh {
   border: none;
   width: 34px;
   height: 34px;
+  display: block;
+  overflow: hidden;
+  text-indent: -9000px;
 }
 /* section02 */
 
@@ -401,6 +404,7 @@ header .menu_profile:hover .fa-face-meh {
 
 .section03 .swiper-pagination {
   display: flex;
+  width: -moz-fit-content;
   width: fit-content;
   left: 50%;
   transform: translateX(-50%);
