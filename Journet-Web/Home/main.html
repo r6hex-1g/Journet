@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/Journet-Web/Home/main.css">
+  <title>Journet</title>
+
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Journet</a>
+    <div class="menu">
+      <a href="#">Story</a>
+      <a href="#">Guide</a>
+      <ul class="menu_button">
+        <li>
+          <a href="#" class="menu_bell"><i class="fa-solid fa-bell"></i></a>
+        </li>
+        <li>
+          <a href="#" class="menu_profile"><i class="fa-solid fa-face-meh"></i></a>
+        </li>
+        <li>
+          <a href="#" class="menu_hamburger"><i class="fa-solid fa-bars"></i></a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+  <main>
+    <div class="section01">
+      <div class="journet_main">
+        <div class="weather">
+          <i class="fa-solid fa-cloud-sun fa-2xl"></i>
+        </div>
+        <div class="title">
+          <h2>새로운 하루와 함께 여행의 한 페이지를 만들어보세요 !</h2>
+          <p>당신의 새로운 하루의 시작을 <span>Journet</span>과 함께 시작해봐요 !</p>
+        </div>
+      </div>
+      <div class="search">
+        <form action="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="#혼자만의 여유">
+          <button type="submit"></button>
+        </form>
+
+      </div>
+    </div>
+    <div class="section02">
+      <h3>여행 기록 한 눈에 보기</h3>
+      <div class="map_view">
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="section03">
+      <div class="title">
+        <h2>나의 여행 기록 .</h2>
+        <p>나의 여행 기억 저장소</p>
+      </div>
+      <div class="content">
+        <div class="maincontent swiper">
+          <div class="swiper-wrapper">
+            <div class="sec03_card swiper-slide">
+              <div class="textbox">
+                <div class="top">
+                  <div>
+                    <h3>나의 해방일지를 찾았다.</h3>
+                    <div>
+                      <span>2024.04.29</span>
+                      <span>청원구 율량동</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p>이야기 하기 좋은 어두운 분위기로 친구들과 진솔하게 대화하면서 시간을 보내게 되는 힐링 공간이다.</p>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <span>#카페</span>
+                  <span>#혼자만의_시간을_즐기는</span>
+                  <span>#애견동반</span>
+                </div>
+              </div>
+            </div>
+            <div class="sec03_card2 swiper-slide">
+              <div class="textbox">
+                <div class="top">
+                  <div>
+                    <h3>감성있는 칵테일바 음</h3>
+                    <div>
+                      <span>2024.03.21</span>
+                      <span>청원구 상당구</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p>원하는 노래가 있으면 메모장에 제목을 적어 수줍게 사장님게 건네면 플레이 리스트에 추가되어서 노래를 들으며 분위기를 즐길 수 있다.ㅎ</p>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <span>#술집</span>
+                  <span>#자유로운_분위기</span>
+                  <span>#음악</span>
+                </div>
+              </div>
+            </div>
+            <div class="sec03_card3 swiper-slide">
+              <div class="textbox">
+                <div class="top">
+                  <div>
+                    <h3>오랜만에 낮달커피</h3>
+                    <div>
+                      <span>2024.02.15</span>
+                      <span>청원구 율량동</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p>오랜만에 매장가서 먹었다. 매장에 달이는 보이지 않았다. 여기 소금커피가 제일 맛있다!
+                      내가 제일 좋아하는 메뉴는 소금초코다. 단짠단짠</p>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <span>#카페</span>
+                  <span>#혼자만의_여유를_즐기는</span>
+                </div>
+              </div>
+            </div>
+            <div class="sec03_card4 swiper-slide">
+              <div class="textbox">
+                <div class="top">
+                  <div>
+                    <h3>크리스마스 이브의 기억</h3>
+                    <div>
+                      <span>2023.12.24</span>
+                      <span>청원구 강서동</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p>크리스마스 이브 ! 분위기 좋은 맛집 찾아보다가 발견한 보테가 !! 오랜만에 와인도 마시고 좋은 사람이랑 좋은 추억 쌓았다 !
+                      2층이라 밖이 훤히 보였던.. 야경 보면서 맛있게 먹었다 예약 필수!!
+                      예약 하고도 조금 기다려야 한다는,,</p>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <span>#카페</span>
+                  <span>#혼자만의_시간을_즐기는</span>
+                  <span>#크리스마스</span>
+                </div>
+              </div>
+            </div>
+            <div class="sec03_card5 swiper-slide">
+              <div class="textbox">
+                <div class="top">
+                  <div>
+                    <h3>딸기로 가득한 오후</h3>
+                    <div>
+                      <span>2024.02.14</span>
+                      <span>청원구 분평동</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p>오랜만에 까페 나들이 ! 저녁 먹고 분위기 좋은 까페 찾아간 에이커 ! 빵 종류도 다양하고 딸기 시즌이라 딸기가 들어간 빵이 많았다
+                      좋아하는 과일 1번이 딸기인데 잘 찾아간듯 -!</p>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <span>#카페</span>
+                  <span>#힐링</span>
+                  <span>#행복이 가득</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="button">
+            <a href="#">더 보기</a>
+            <i class="fa-solid fa-angle-right fa-lg"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="section04">
+      <div class="title">
+        <h2>여러사람이 다녀간 ,</h2>
+        <h2>카페 <i class="fa-solid fa-angle-down"></i></h2>
+      </div>
+      <div class="content">
+        <div class="maincontent swiper">
+          <div class="swiper-wrapper">
+            <div class="sec04_card swiper-slide">
+              <div class="textbox">
+                <div class="top">
+                  <span><i class="fa-solid fa-face-meh"></i>김민정님의 기록</span>
+                  <div>
+                    <h3>나만 알고 싶은 공간</h3>
+                    <div class="date">
+                      <span>2024.04.29</span>
+                      <span>상당구 우암동 </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div>
+                    <span>#카페</span>
+                    <span>#혼자만의_여유를_즐기는</span>
+                    <span>#애견동반</span>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sec04_card2 swiper-slide">
+              <div class="textbox">
+                <div class="top">
+                  <span><i class="fa-solid fa-face-meh"></i>최은님의 기록</span>
+                  <div>
+                    <h3>나의 해방일지</h3>
+                    <div class="date">
+                      <span>2024.04.29</span>
+                      <span>상당구 우암동 </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div>
+                    <span>#카페</span>
+                    <span>#혼자만의_여유를_즐기는</span>
+                    <span>#애견동반</span>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="textbox">
+                <div class="top">
+                  <span><i class="fa-solid fa-face-meh"></i>장채연님의 기록</span>
+                  <div>
+                    <h3>감성을 느낄 수 있는</h3>
+                    <div class="date">
+                      <span>2024.04.29</span>
+                      <span>상당구 우암동 </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div>
+                    <span>#카페</span>
+                    <span>#혼자만의_여유를_즐기는</span>
+                    <span>#애견동반</span>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="textbox">
+                <div class="top">
+                  <span><i class="fa-solid fa-face-meh"></i>박선정님의 기록</span>
+                  <div>
+                    <h3>귀여운 소품이 가득, 요아소비</h3>
+                    <div class="date">
+                      <span>2024.04.29</span>
+                      <span>상당구 우암동 </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div>
+                    <span>#카페</span>
+                    <span>#혼자만의_여유를_즐기는</span>
+                    <span>#애견동반</span>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sec04_card5 swiper-slide">
+              <div class="textbox">
+                <div class="top">
+                  <span><i class="fa-solid fa-face-meh"></i>라희의 기록</span>
+                  <div>
+                    <h3>나만 알고 싶은 공간</h3>
+                    <div class="date">
+                      <span>2024.04.29</span>
+                      <span>상당구 우암동 </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div>
+                    <span>#카페</span>
+                    <span>#혼자만의_여유를_즐기는</span>
+                    <span>#애견동반</span>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <a href="#">다른기록 더 구경하기</a>
+        <i class="fa-solid fa-angle-right fa-lg"></i>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+      <a href="#"><i class="fa-solid fa-comment fa-2xl"></i></a>
+    </div>
+    <div class="notice">
+      <a href="#">서비스 이용약관</a>
+      <a href="#">개인정보처리방침</a>
+      <a href="#">고객센터</a>
+    </div>
+  </footer>
+
+  <!-- Kakao map API here -->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=564115dcd7ead3ed0d36372d5583c5b1"></script>
+  <script type="text/javascript" src="../API/KakaoMap.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper1 = new Swiper(".section03 .maincontent", {
+      slidesPerView: 1.1,
+      centeredSlides: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper2 = new Swiper(".section04 .maincontent", {
+      slidesPerView: 3.1,
+      centeredSlides: true,
+      spaceBetween: 30,
+      grabCursor: true,
+
+    });
+  </script>
+</body>
+
+</html>
