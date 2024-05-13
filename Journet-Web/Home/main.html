@@ -58,14 +58,14 @@
       </div>
     </div>
     <div class="section03">
-      <div class="title">
-        <h2>나의 여행 기록 .</h2>
-        <p>나의 여행 기억 저장소</p>
-      </div>
-      <div class="content">
-        <div class="maincontent swiper">
+      <div class="inner">
+        <div class="title">
+          <h2>나의 여행 기록 .</h2>
+          <p>나의 여행 기억 저장소</p>
+        </div>
+        <div class="swiper maincontent">
           <div class="swiper-wrapper">
-            <div class="sec03_card swiper-slide">
+            <div class="swiper-slide sec03_card">
               <div class="textbox">
                 <div class="top">
                   <div>
@@ -86,7 +86,7 @@
                 </div>
               </div>
             </div>
-            <div class="sec03_card2 swiper-slide">
+            <div class="swiper-slide sec03_card2">
               <div class="textbox">
                 <div class="top">
                   <div>
@@ -107,7 +107,7 @@
                 </div>
               </div>
             </div>
-            <div class="sec03_card3 swiper-slide">
+            <div class="swiper-slide sec03_card3">
               <div class="textbox">
                 <div class="top">
                   <div>
@@ -128,7 +128,7 @@
                 </div>
               </div>
             </div>
-            <div class="sec03_card4 swiper-slide">
+            <div class="swiper-slide sec03_card4">
               <div class="textbox">
                 <div class="top">
                   <div>
@@ -151,7 +151,7 @@
                 </div>
               </div>
             </div>
-            <div class="sec03_card5 swiper-slide">
+            <div class="swiper-slide sec03_card5">
               <div class="textbox">
                 <div class="top">
                   <div>
@@ -181,17 +181,18 @@
           </div>
         </div>
       </div>
+    </div>
 
     </div>
     <div class="section04">
-      <div class="title">
-        <h2>여러사람이 다녀간 ,</h2>
-        <h2>카페 <i class="fa-solid fa-angle-down"></i></h2>
-      </div>
-      <div class="content">
-        <div class="maincontent swiper">
+      <div class="inner">
+        <div class="title">
+          <h2>여러사람이 다녀간 ,</h2>
+          <h2>카페 <i class="fa-solid fa-angle-down"></i></h2>
+        </div>
+        <div class="swiper maincontent">
           <div class="swiper-wrapper">
-            <div class="sec04_card swiper-slide">
+            <div class="swiper-slide sec04_card">
               <div class="textbox">
                 <div class="top">
                   <span><i class="fa-solid fa-face-meh"></i>김민정님의 기록</span>
@@ -215,7 +216,7 @@
                 </div>
               </div>
             </div>
-            <div class="sec04_card2 swiper-slide">
+            <div class="swiper-slide sec04_card2">
               <div class="textbox">
                 <div class="top">
                   <span><i class="fa-solid fa-face-meh"></i>최은님의 기록</span>
@@ -287,7 +288,7 @@
                 </div>
               </div>
             </div>
-            <div class="sec04_card5 swiper-slide">
+            <div class="swiper-slide sec04_card5">
               <div class="textbox">
                 <div class="top">
                   <span><i class="fa-solid fa-face-meh"></i>라희의 기록</span>
@@ -342,9 +343,9 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper1 = new Swiper(".section03 .maincontent", {
-      slidesPerView: 1.1,
+      slidesPerView: 1.5,
       centeredSlides: true,
-      spaceBetween: 30,
+      spaceBetween: 110,
       grabCursor: true,
       pagination: {
         el: ".swiper-pagination",
@@ -352,7 +353,7 @@
       },
     });
     var swiper2 = new Swiper(".section04 .maincontent", {
-      slidesPerView: 3.1,
+      slidesPerView: 4,
       centeredSlides: true,
       spaceBetween: 30,
       grabCursor: true,

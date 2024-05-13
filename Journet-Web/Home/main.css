@@ -66,6 +66,7 @@ header {
   background: #F6F6F6;
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
+  /* background: rgba(255, 255, 255, 0.5); */
 }
 
 header .logo {
@@ -113,7 +114,6 @@ header .fa-face-meh {
   top: 14px;
   left: 14px;
 }
-
 
 header .menu_profile:hover {
   background: #009882;
@@ -218,6 +218,8 @@ header .menu_profile:hover .fa-face-meh {
   width: 34px;
   height: 34px;
 }
+
+
 /* section02 */
 
 .section02 {
@@ -263,21 +265,19 @@ header .menu_profile:hover .fa-face-meh {
 }
 
 /* section03 */
-
 .section03 {
   display: flex;
-  padding: 100px 10px 200px 10px;
+  width: 100%;
+  padding: 100px 0px 200px 0px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 40px;
-  align-self: stretch;
-  position: relative;
+  overflow: hidden;
 }
 
 .section03 .title {
+  width: 100%;
+  padding: 0 17.5%;
   display: flex;
-  width: 1200px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -294,60 +294,66 @@ header .menu_profile:hover .fa-face-meh {
   letter-spacing: -0.36px;
 }
 
-.section03 .content {
-  max-width: 99vw;
-  height: 700px;
+.section03 .inner, .section04 .inner {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .section03 .maincontent {
   width: 100%;
-  height: 760px;
-}
-
-.section03 .swiper-wrapper {
-  height: 600px;
+  height: 800px;
+  overflow: visible;
 }
 
 .section03 .swiper-slide {
-  background: linear-gradient(0deg, rgba(35, 35, 35, 0.50) 0%, rgba(35, 35, 35, 0.50) 100%), lightgray 50% / cover no-repeat;
   border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  height: 650px;
+  opacity: 20%;
+}
+
+.section03 .sec03_card {
+  background: url(/Journet-Web/Home/img/sec03_card.png) no-repeat;
+  background-size: cover;
+}
+.section03 .sec03_card2 {
+  background: url(/Journet-Web/Home/img/sec03_card2.png) no-repeat;
+  background-size: cover;
+}
+.section03 .sec03_card3 {
+  background: url(/Journet-Web/Home/img/sec03_card3.png) no-repeat;
+  background-size: cover;
+}
+.section03 .sec03_card4 {
+  background: url(/Journet-Web/Home/img/sec03_card4.png) no-repeat;
+  background-size: cover;
+}
+.section03 .sec03_card5 {
+  background: url(/Journet-Web/Home/img/sec03_card5.png) no-repeat;
+  background-size: cover;
+}
+.section03 .swiper-slide-active {
+  background-blend-mode: darken;
+  opacity: 100%;
+}
+.section03 .textbox {
+  width: 100%;
+  height: 100%;
   display: flex;
   padding: 50px 65px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
-}
-
-
-
-.section03 .sec03_card {
-  background: url(/Journet-Web/Home/img/sec03_card.png);
-}
-
-.section03 .sec03_card2 {
-  background: url(/Journet-Web/Home/img/sec03_card2.png);
-}
-
-.section03 .sec03_card3 {
-  background: url(/Journet-Web/Home/img/sec03_card3.png);
-}
-
-.section03 .sec03_card4 {
-  background: url(/Journet-Web/Home/img/sec03_card4.png);
-}
-
-.section03 .sec03_card5 {
-  background: url(/Journet-Web/Home/img/sec03_card5.png);
-}
-
-
-.section03 .textbox {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 300px;
   color: #FFF;
-
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
 }
 
 .section03 .textbox .top {
@@ -428,7 +434,6 @@ header .menu_profile:hover .fa-face-meh {
   border: 1px solid transparent;
 }
 
-
 .section03 .button {
   display: flex;
   padding: 16px 25px;
@@ -452,60 +457,63 @@ header .menu_profile:hover .fa-face-meh {
   letter-spacing: -0.288px;
 }
 
+.section03 .button:hover {
+  background: #212229;
+}
 
+.section03 .button:hover a, .section03 .button:hover i {
+  color: #E9E9E9;
+}
 
 
 /* section04 */
 
 .section04 {
+  width: 100%;
   display: flex;
-  padding: 10px 410px 50px 410px;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
   gap: 100px;
-  align-self: stretch;
 }
 
 .section04 .title {
+  padding: 0 17.5%;
   display: flex;
-  width: 1200px;
+  width: 100%;
   align-items: center;
   gap: 20px;
 }
 
-.section04 .content {
-  max-width: 99vw;
-  height: 700px;
-}
-
 .section04 .maincontent {
   width: 100%;
-  height: 634px;
+  height: 100%;
+  overflow: visible;
+  transform: translate3d(-390px, 0px, 0px);
 }
 
 .section04 .swiper-slide {
   border-radius: 40px;
   background: #E9E9E9;
   display: flex;
-  width: 1200px;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
 
-
-
-
 .section04 .sec04_card {
-  background: url(/Journet-Web/Home/img/sec04_card.png);
+  background: url(/Journet-Web/Home/img/sec04_card.png) no-repeat;
+  background-size: cover;
 }
 
 .section04 .sec04_card2 {
-  background: url(/Journet-Web/Home/img/sec04_card2.png);
+  background: url(/Journet-Web/Home/img/sec04_card2.png) no-repeat;
+  background-size: cover;
 }
 
 .section04 .sec04_card5 {
-  background: url(/Journet-Web/Home/img/sec04_card5.png);
+  background: url(/Journet-Web/Home/img/sec04_card5.png) no-repeat;
+  background-size: cover;
 }
 
 .section04 .textbox {
@@ -572,7 +580,6 @@ header .menu_profile:hover .fa-face-meh {
   gap: 20px;
 }
 
-
 .section04 .button {
   display: flex;
   padding: 16px 25px;
@@ -589,7 +596,14 @@ header .menu_profile:hover .fa-face-meh {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.288px;
+}
 
+.section04 .button:hover {
+  background: #212229;
+}
+
+.section04 .button:hover a, .section04 .button:hover i {
+  color: #E9E9E9;
 }
 
 
