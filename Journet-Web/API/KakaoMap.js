@@ -22,7 +22,7 @@ kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
 });
 
 // 맵 세부 설정
-map.setMaxLevel(8, { animate: true });
+map.setMaxLevel(7, { animate: true });
 map.setZoomable(true);
 map.setDraggable(true);
 
