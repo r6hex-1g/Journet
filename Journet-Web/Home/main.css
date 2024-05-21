@@ -186,7 +186,13 @@ header .menu_profile:hover .fa-face-meh {
   align-items: center;
   border-radius: 90px;
   background: #F6F6F6;
-  box-shadow: 14px 25px 35px 0px rgba(0, 0, 0, 0.15), -12px -13px 11.9px 0px #FFF;
+  box-shadow: 15px 5px 20px 0px #F1F1F1, -17px -11px 11.3px 0px #FFF inset, 8px 4px 20px 0px rgba(0, 0, 0, 0.10) inset;
+}
+
+.section01 .search:active {
+  border-radius: 90px;
+  background: #F6F6F6;
+  box-shadow: 14px 25px 35px 0px rgba(0, 0, 0, 0.10), -5px -10px 11.9px 0px #FFF;
 }
 
 .section01 .search form {
@@ -246,7 +252,7 @@ header .menu_profile:hover .fa-face-meh {
 .section02 .map_view {
   width: 100%;
   height: 841px;
-  /* z-index: 1; */
+  z-index: 1;
 
 }
 
@@ -254,8 +260,8 @@ header .menu_profile:hover .fa-face-meh {
 .section02 .map_view::before {
   width: 100%;
   height: 841px;
-  background: linear-gradient(181deg, #F3F3F3 0.95%, rgba(243, 243, 243, 0.30) 10.67%, rgba(243, 243, 243, 0.00) 46.31%, rgba(243, 243, 243, 0.30) 96.43%, #F3F3F3 100.93%), url(<path-to-image>) lightgray 50% / cover no-repeat;
-  /* z-index: 2; */
+  background: linear-gradient(181deg, #F3F3F3 0.95%, rgba(243, 243, 243, 0.30) 10.67%, rgba(243, 243, 243, 0.00) 46.31%, rgba(243, 243, 243, 0.30) 96.43%, #F3F3F3 100.93%) lightgray 50% / cover no-repeat;
+  z-index: 2;
 }
 
 #map {
@@ -496,7 +502,9 @@ header .menu_profile:hover .fa-face-meh {
   transform: translate3d(-390px, 0px, 0px);
 }
 
-.section04 .swiper-slide {
+/* 이미지 없는 기본 슬라이드 */
+
+.section04 .maincontent .swiper-slide {
   border-radius: 40px;
   background: #E9E9E9;
   display: flex;
@@ -505,30 +513,15 @@ header .menu_profile:hover .fa-face-meh {
   gap: 10px;
 }
 
-.section04 .sec04_card {
-  background: url(/Journet/Journet-Web/Home/img/sec04_card.png) no-repeat;
-  background-size: cover;
-}
-
-.section04 .sec04_card2 {
-  background: url(/Journet/Journet-Web/Home/img/sec04_card2.png) no-repeat;
-  background-size: cover;
-}
-
-.section04 .sec04_card5 {
-  background: url(/Journet/Journet-Web/Home/img/sec04_card5.png) no-repeat;
-  background-size: cover;
-}
-
 .section04 .textbox {
   display: flex;
   padding: 32px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 400px;
+  gap: 110px;
 }
 
-.section04 .textbox .top {
+.section04 .maincontent .swiper-slide .textbox .top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -536,8 +529,13 @@ header .menu_profile:hover .fa-face-meh {
   align-self: stretch;
 }
 
-.section04 .textbox .top span {
-  color: #FFF;
+.section04 .maincontent .swiper-slide .textbox .icon_name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section04 .maincontent .swiper-slide .textbox .top span {
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -546,18 +544,17 @@ header .menu_profile:hover .fa-face-meh {
   letter-spacing: -0.27px;
 }
 
-.section04 .textbox .top h3 {
-  color: #FFF;
+.section04 .maincontent .swiper-slide .textbox .top h3 {
   font-size: 35px;
   font-style: normal;
+  width: 288px;
   font-weight: 500;
   line-height: 150%;
   /* 52.5px */
   letter-spacing: -0.63px;
 }
 
-.section04 .textbox .top .date {
-  color: #F1F1F1;
+.section04 .maincontent .swiper-slide .textbox .top .date {
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -566,23 +563,63 @@ header .menu_profile:hover .fa-face-meh {
   letter-spacing: -0.27px;
 }
 
-.section04 .textbox .bottom {
+.section04 .maincontent .swiper-slide .textbox .bottom {
   display: flex;
   justify-content: space-between;
-  color: #F8F8F8;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   /* 22.5px */
   letter-spacing: -0.27px;
+  width: 386px;
+  align-items: center;
 }
 
-.section04 .textbox .bottom div:first-child {
+.section04 .maincontent .swiper-slide .textbox .bottom div:first-child {
   display: flex;
   align-items: flex-start;
   gap: 20px;
 }
+
+/* 이미지 있는 슬라이드 */
+.section04 .maincontent .swiper-slide.bg_img .textbox {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 400px;
+}
+
+.section04 .maincontent .swiper-slide.bg_img .icon_name, .section04 .maincontent .swiper-slide.bg_img h3 {
+  color: #FFFFFF;
+}
+
+.section04 .maincontent .swiper-slide.bg_img .date {
+  color: #F1F1F1;
+}
+
+.section04 .maincontent .swiper-slide.bg_img .bottom {
+  color: #F8F8F8;
+}
+
+
+/* 이미지 있는 슬라이드 배경 */
+
+.section04 .sec04_card.bg_img {
+  border-radius: 40px;
+  background: linear-gradient(0deg, rgba(35, 35, 35, 0.50) 0%, rgba(35, 35, 35, 0.50) 100%), url(/Journet-Web/Home/img/sec04_card.png) lightgray 50% / cover no-repeat;
+}
+
+.section04 .sec04_card2.bg_img {
+  background: linear-gradient(0deg, rgba(35, 35, 35, 0.50) 0%, rgba(35, 35, 35, 0.50) 100%), url(/Journet-Web/Home/img/sec04_card2.png) lightgray 50% / cover no-repeat;
+}
+
+.section04 .sec04_card5.bg_img {
+  border-radius: 40px;
+  background: linear-gradient(0deg, rgba(35, 35, 35, 0.50) 0%, rgba(35, 35, 35, 0.50) 100%), url(/Journet-Web/Home/img/sec04_card5.png) lightgray 50% / cover no-repeat;
+}
+
 
 .section04 .button {
   display: flex;
@@ -612,6 +649,7 @@ header .menu_profile:hover .fa-face-meh {
 
 
 
+
 /* 푸터 */
 
 footer {
@@ -629,6 +667,15 @@ footer .social {
   display: flex;
   gap: 100px;
 
+}
+
+footer .social a i:hover {
+  color: #212229;
+}
+
+footer .notice a:hover {
+  font-weight: 700;
+  color: #212229;
 }
 
 footer .notice {
