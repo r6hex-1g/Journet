@@ -218,7 +218,7 @@ header .menu_profile:hover .fa-face-meh {
 }
 
 .section01 .search button {
-  background: url(/Journet-Web/Home/img/검색이동.svg);
+  background: url(/Journet/Journet-Web/Home/img/검색이동.svg);
   border: none;
   width: 34px;
   height: 34px;
@@ -328,23 +328,23 @@ header .menu_profile:hover .fa-face-meh {
 }
 
 .section03 .sec03_card {
-  background: url(/Journet-Web/Home/img/sec03_card.png) no-repeat;
+  background: url(/Journet/Journet-Web/Home/img/sec03_card.png) no-repeat;
   background-size: cover;
 }
 .section03 .sec03_card2 {
-  background: url(/Journet-Web/Home/img/sec03_card2.png) no-repeat;
+  background: url(/Journet/Journet-Web/Home/img/sec03_card2.png) no-repeat;
   background-size: cover;
 }
 .section03 .sec03_card3 {
-  background: url(/Journet-Web/Home/img/sec03_card3.png) no-repeat;
+  background: url(/Journet/Journet-Web/Home/img/sec03_card3.png) no-repeat;
   background-size: cover;
 }
 .section03 .sec03_card4 {
-  background: url(/Journet-Web/Home/img/sec03_card4.png) no-repeat;
+  background: url(/Journet/Journet-Web/Home/img/sec03_card4.png) no-repeat;
   background-size: cover;
 }
 .section03 .sec03_card5 {
-  background: url(/Journet-Web/Home/img/sec03_card5.png) no-repeat;
+  background: url(/Journet/Journet-Web/Home/img/sec03_card5.png) no-repeat;
   background-size: cover;
 }
 .section03 .swiper-slide-active {
@@ -455,6 +455,7 @@ header .menu_profile:hover .fa-face-meh {
   transform: translateX(150px);
   left: 50%;
   bottom: 8px;
+  z-index: 2;
 }
 
 .section03 .button a {
@@ -512,7 +513,7 @@ header .menu_profile:hover .fa-face-meh {
   gap: 10px;
 }
 
-.section04 .maincontent .swiper-slide .textbox {
+.section04 .textbox {
   display: flex;
   padding: 32px;
   flex-direction: column;
