@@ -20,7 +20,7 @@ let map = new kakao.maps.Map(mapContainer, options);
 let clusterer = {
   map: map,
   averageCenter: true,
-  minLevel: 4
+  minLevel: 3
 };
 
 let pin_clusterer = new kakao.maps.MarkerClusterer(clusterer);
