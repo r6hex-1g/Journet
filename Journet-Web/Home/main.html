@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="/Journet-Web/Home/main.css">
+  <link rel="stylesheet" media="all and (max-width : 1199px)" href="/Journet-Web/Home/main_t.css">
+  <link rel="stylesheet" media="all and (max-width : 767px)" href="/Journet-Web/Home/main_m.css">
   <title>Journet</title>
 </head>
 
@@ -14,8 +16,8 @@
   <header>
     <a href="#" class="logo">Journet</a>
     <div class="menu">
-      <a href="#">Story</a>
-      <a href="#">Guide</a>
+      <a href="#" class="story">Story</a>
+      <a href="#" class="guide">Guide</a>
       <ul class="menu_button">
         <li>
           <a href="#" class="menu_bell"><i class="fa-solid fa-bell"></i></a>
@@ -43,18 +45,45 @@
       </div>
       <div class="search">
         <form>
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="#혼자만의 여유">
+          <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="#혼자만의 여유" list="tag_list" id="tag_choice" name="tag_choice">
+          </div>
           <button type="submit">검색</button>
         </form>
+        <div class="search_layer">
+          <div class="layer_inner">
+            <datalist id="tag_list">
+              <option value="#카페"></option>
+              <option value="#음식점"></option>
+              <option value="#술집"></option>
+              <option value="#전시관"></option>
+              <option value="#테마파크"></option>
+              <option value="#공연장"></option>
+              <option value="#문화재"></option>
+              <option value="#바다"></option>
+              <option value="#산"></option>
+              <option value="#공원"></option>
+              <option value="#시장"></option>
+              <option value="#쇼핑"></option>
+              <option value="#숙소"></option>
+              <option value="#체험"></option>
+              <option value="#일상"></option>
+              <option value="#여행"></option>
+              <option value="#맛집"></option>
+              <option value="#힐링"></option>
+              <option value="#감성"></option>
 
+            </datalist>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section02">
       <h3>여행 기록 한 눈에 보기</h3>
       <div class="map_view">
         <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-        <script src="/Journet-Web/DB/Supabase/Mappins.js"></script>
+        <script src="/Journet/Journet-Web/DB/Supabase/Mappins.js"></script>
         <div id="map"></div>
       </div>
     </div>
@@ -362,6 +391,16 @@
       slidesPerView: 1.5,
       centeredSlides: true,
       spaceBetween: 110,
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 200,
+        },
+        1200: {
+          slidesPerView: 1.5,
+          spaceBetween: 200,
+        },
+      },
       grabCursor: true,
       pagination: {
         el: ".swiper-pagination",
@@ -372,6 +411,17 @@
       slidesPerView: 4,
       centeredSlides: true,
       spaceBetween: 30,
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
       grabCursor: true,
 
     });
