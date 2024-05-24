@@ -12,7 +12,7 @@
     <br>
     <br>
     🖥️ : Beta Ver.0.09<br>
-    📱 : Pause
+    📱 : <a href="https://github.com/r6hex-1g/Journet_App">앱 버전으로 가기!</a>
     <br>
     <br>
     <b>해당 사이트들을 조금씩 참고해서 만들었습니다! ✨</b><br>
