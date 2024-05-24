@@ -12,19 +12,21 @@ var mapContainer = document.getElementById('map');
 var Center = new kakao.maps.LatLng(36.6364883, 127.4836014);
 var options = {
   center: Center,
-  level: 14
+  level: 7
 };
 let map = new kakao.maps.Map(mapContainer, options);
 
 // 맵 클러스터 설정
-var clusterer = new kakao.maps.MarkerClusterer({
-  map: map, // 마커들을 클러스터로 관리하고 표시할 지도 객체 
-  averageCenter: true, // 클러스터에 포함된 마커들의 평균 위치를 클러스터 마커 위치로 설정 
-  minLevel: 10 // 클러스터 할 최소 지도 레벨 
-});
+let clusterer = {
+  map: map,
+  averageCenter: true,
+  minLevel: 4
+};
+
+let pin_clusterer = new kakao.maps.MarkerClusterer(clusterer);
 
 // 맵 세부 설정
-// map.setMaxLevel(7, { animate: true });
+map.setMaxLevel(7, { animate: true });
 map.setZoomable(true);
 map.setDraggable(true);
 
@@ -39,6 +41,7 @@ map.addControl(control, kakao.maps.ControlPosition.BOTTOMRIGHT);
 
 // 생성자 함수 => 객체 > 배열
 let map_pin = [];
+let markers = [];
 
 // DB 로딩하기
 async function refrash_mappins() {
@@ -63,11 +66,10 @@ async function refrash_mappins() {
     // 마커 찍기
     var marker = new kakao.maps.Marker({
       map: map,
-      position: all_pin.latlng
+      position: all_pin.latlng,
     });
-
-    // console.log(marker);
-    // clusterer.addMarkers(marker.n);
+    markers.push(marker);
   }
+  pin_clusterer.addMarkers(markers);
 }
 refrash_mappins();
