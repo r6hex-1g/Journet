@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/Journet-Web/Home/main.css">
-  <link rel="stylesheet" media="all and (max-width : 1199px)" href="/Journet-Web/Home/main_t.css">
-  <link rel="stylesheet" media="all and (max-width : 767px)" href="/Journet-Web/Home/main_m.css">
+  <link rel="stylesheet" href="/Journet/Journet-Web/Home/main.css">
+  <link rel="stylesheet" media="all and (max-width : 1199px)" href="/Journet/Journet-Web/Home/main_t.css">
   <title>Journet</title>
 </head>
 
@@ -16,8 +15,8 @@
   <header>
     <a href="#" class="logo">Journet</a>
     <div class="menu">
-      <a href="#" class="story">Story</a>
-      <a href="#" class="guide">Guide</a>
+      <a href="#">Story</a>
+      <a href="#">Guide</a>
       <ul class="menu_button">
         <li>
           <a href="#" class="menu_bell"><i class="fa-solid fa-bell"></i></a>
@@ -83,6 +82,7 @@
       <h3>여행 기록 한 눈에 보기</h3>
       <div class="map_view">
         <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+        <script src="/Journet/Journet-Web/DB/Supabase/Supabase.js"></script>
         <div id="map"></div>
       </div>
     </div>
@@ -210,8 +210,6 @@
           </div>
         </div>
       </div>
-    </div>
-
     </div>
     <div class="section04">
       <div class="inner">
@@ -379,9 +377,8 @@
   </footer>
 
   <!-- Kakao map API here -->
-  <script
-    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=564115dcd7ead3ed0d36372d5583c5b1&libraries=clusterer"></script>
-  <script src="../DB/Supabase/Supabase.js"></script>
+  <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=564115dcd7ead3ed0d36372d5583c5b1"></script>
+  <script src="../API/KakaoMap.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -398,7 +395,8 @@
         },
         1200: {
           slidesPerView: 1.5,
-          spaceBetween: 200,
+          spaceBetween: 110
+          ,
         },
       },
       grabCursor: true,

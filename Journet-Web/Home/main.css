@@ -78,10 +78,10 @@ header .logo {
 }
 
 header .menu {
-  width: 448px;
+  width: 100%;
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: 60px;
 }
@@ -126,7 +126,7 @@ header .menu_profile:hover .fa-face-meh {
 
 }
 
-header .menu_hamburger {
+header .menu .menu_button li:nth-child(3) {
   display: none;
 }
 
@@ -167,6 +167,7 @@ header .menu_hamburger {
 .section01 .title h2 {
   font-size: 50px;
   font-weight: 600;
+  word-break: keep-all;
 }
 
 .section01 .title p {
@@ -174,6 +175,7 @@ header .menu_hamburger {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: -0.45px;
+  word-break: keep-all;
 }
 
 .section01 .title span {
@@ -193,8 +195,6 @@ header .menu_hamburger {
   background: #F6F6F6;
   box-shadow: 15px 5px 20px 0px #F1F1F1, -17px -11px 11.3px 0px #FFF inset, 8px 4px 20px 0px rgba(0, 0, 0, 0.10) inset;
   position: relative;
-
-
 }
 
 .section01 .search:active {
@@ -261,7 +261,7 @@ header .menu_hamburger {
 
 .section02 .map_view {
   width: 100%;
-  height: 841px;
+  height: 840px;
   z-index: 1;
 
 }
@@ -307,6 +307,7 @@ header .menu_hamburger {
 .section03 .inner, .section04 .inner {
   width: 100%;
   max-width: 1920px;
+  min-width: 1500px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -361,7 +362,7 @@ header .menu_hamburger {
   padding: 50px 65px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 300px;
+  justify-content: space-between;
   color: #FFF;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 40px;
@@ -382,7 +383,7 @@ header .menu_hamburger {
 }
 
 .section03 .textbox .top h3 {
-  font-size: 28px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -392,7 +393,7 @@ header .menu_hamburger {
 
 .section03 .textbox .top span {
   color: #DFDFDF;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -410,6 +411,11 @@ header .menu_hamburger {
   letter-spacing: -0.36px;
 }
 
+.section03 .textbox .top .date {
+  display: flex;
+  gap: 20px;
+}
+
 .section03 .textbox .bottom {
   display: flex;
   align-items: flex-start;
@@ -421,7 +427,7 @@ header .menu_hamburger {
   width: -moz-fit-content;
   width: fit-content;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-90%);
   background: #E9E9E9;
   padding: 23px 24px;
   border-radius: 30px;
@@ -455,10 +461,9 @@ header .menu_hamburger {
   border-radius: 30px;
   background: #E9E9E9;
   position: absolute;
-  transform: translateX(150px);
+  transform: translateX(60px);
   left: 50%;
   bottom: 8px;
-  z-index: 2;
 }
 
 .section03 .button a {
@@ -491,9 +496,9 @@ header .menu_hamburger {
 }
 
 .section04 .title {
-  padding: 0 17.5%;
   display: flex;
   width: 100%;
+  padding: 0 17.5%;
   align-items: center;
   gap: 20px;
 }
@@ -502,7 +507,7 @@ header .menu_hamburger {
   width: 100%;
   height: 100%;
   overflow: visible;
-  transform: translate3d(-390px, 0px, 0px);
+  transform: translate3d(-20.5%, 0px, 0px);
 }
 
 /* 이미지 없는 기본 슬라이드 */
@@ -514,14 +519,16 @@ header .menu_hamburger {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  min-width: 450px;
 }
 
-.section04 .textbox {
+.section04 .maincontent .swiper-slide .textbox {
   display: flex;
   padding: 32px;
   flex-direction: column;
   align-items: flex-start;
   gap: 110px;
+  width: 100%;
 }
 
 .section04 .maincontent .swiper-slide .textbox .top {
@@ -610,17 +617,16 @@ header .menu_hamburger {
 /* 이미지 있는 슬라이드 배경 */
 
 .section04 .sec04_card.bg_img {
-  border-radius: 40px;
-  background: linear-gradient(0deg, rgba(35, 35, 35, 0.50) 0%, rgba(35, 35, 35, 0.50) 100%), url(/Journet-Web/Home/img/sec04_card.png) lightgray 50% / cover no-repeat;
+  background: linear-gradient(0deg, rgba(35, 35, 35, 0.50) 0%, rgba(35, 35, 35, 0.50) 100%), url(/Journet/Journet-Web/Home/img/sec04_card.png) lightgray 50% / cover no-repeat;
 }
 
 .section04 .sec04_card2.bg_img {
-  background: linear-gradient(0deg, rgba(35, 35, 35, 0.50) 0%, rgba(35, 35, 35, 0.50) 100%), url(/Journet-Web/Home/img/sec04_card2.png) lightgray 50% / cover no-repeat;
+  background: linear-gradient(0deg, rgba(35, 35, 35, 0.50) 0%, rgba(35, 35, 35, 0.50) 100%), url(/Journet/Journet-Web/Home/img/sec04_card2.png) lightgray 50% / cover no-repeat;
 }
 
 .section04 .sec04_card5.bg_img {
   border-radius: 40px;
-  background: linear-gradient(0deg, rgba(35, 35, 35, 0.50) 0%, rgba(35, 35, 35, 0.50) 100%), url(/Journet-Web/Home/img/sec04_card5.png) lightgray 50% / cover no-repeat;
+  background: linear-gradient(0deg, rgba(35, 35, 35, 0.50) 0%, rgba(35, 35, 35, 0.50) 100%), url(/Journet/Journet-Web/Home/img/sec04_card5.png) lightgray 50% / cover no-repeat;
 }
 
 

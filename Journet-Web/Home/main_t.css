@@ -34,22 +34,28 @@ header .menu {
 
 .section01 .title {
   display: flex;
-  padding: 0px 150px;
+  align-self: stretch;
 }
 
 .section01 .title h2 {
   align-self: stretch;
   text-align: center;
+  color: blueviolet;
+  padding: 0px 17%;
 }
 
 
 .section01 .search {
-  width: 100%;
+  width: 85%;
 }
 
 
 .section01 .search form {
   width: 100%;
+}
+
+.section02 .map_view {
+  height: 700px;
 }
 
 .section03 {
@@ -58,12 +64,27 @@ header .menu {
   align-self: stretch;
 }
 
+.section03 .inner, .section04 .inner {
+  min-width: 0;
+}
+
+.section03 .title, .section04 .title {
+  padding: 0 8.5%;
+  color: blueviolet;
+}
+
 .section03 .maincontent {
-  height: 760px;
-  width: 824px;
+  padding: 0 8.5%;
+  height: 800px;
   gap: 100px;
   margin-right: 78px;
+}
 
+.section03 .swiper-pagination {
+  transform: translateX(-90%);
+}
+.section03 .button {
+  transform: translateX(60px);
 }
 
 .section04 {
@@ -77,11 +98,14 @@ header .menu {
   flex-direction: column;
   align-items: center;
   align-self: stretch;
-  transform: translate3d(-180px, 0px, 0px);
+  transform: translate3d(-25%, 0px, 0px);
+  min-width: 352px;
 }
 
 .section04 .maincontent .swiper-slide {
   width: 344px;
+  border-radius: 30px;
+  min-width: 350px;
 }
 
 .section04 .maincontent .swiper-slide .textbox {
@@ -127,6 +151,10 @@ header .menu {
 .section04 .maincontent .swiper-slide.bg_img .textbox .top h3 {
   font-size: 30px;
   letter-spacing: -0.54px;
+}
+
+.section04 .maincontent .swiper-slide .textbox .bottom div:first-child {
+  gap: 10px;
 }
 
 
