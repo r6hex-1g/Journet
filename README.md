@@ -37,14 +37,7 @@
     <h1>🗂️ : 파일 구조</h1>
     <div align="left">
         <pre>Journet/
-├── Journet-App/
-│   └── Journet
-│       ├── Assets/
-│       ├── Model/
-│       └── Views/
-│
 └── Journet-Web/
-    ├── API/
     ├── DB/
     ├── Diary/
     ├── Home/
