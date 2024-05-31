@@ -40,8 +40,7 @@ header .menu {
 .section01 .title h2 {
   align-self: stretch;
   text-align: center;
-  color: blueviolet;
-  padding: 0px 17%;
+  /* padding: 0px 17%; */
 }
 
 
@@ -70,7 +69,6 @@ header .menu {
 
 .section03 .title, .section04 .title {
   padding: 0 8.5%;
-  color: blueviolet;
 }
 
 .section03 .maincontent {
@@ -172,10 +170,6 @@ footer .notice {
   gap: 50px;
 }
 
-footer .notice a:first-child::after {
-  right: 404px;
-}
-
-footer .notice a:nth-child(2)::after {
-  right: 164px;
+footer .notice a::after {
+  right: -24px;
 }
