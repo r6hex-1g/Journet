@@ -203,12 +203,22 @@ header .menu .menu_button li:nth-child(3) {
   box-shadow: 14px 25px 35px 0px rgba(0, 0, 0, 0.10), -5px -10px 11.9px 0px #FFF;
 }
 
+
 .section01 .search form {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 30px;
   justify-content: space-between;
+}
+
+.section01 .search div {
+  display: flex;
+  gap: 8px;
+}
+
+.section01 .search i {
+  align-items: center;
+  display: flex;
 }
 
 .section01 .search input {
@@ -221,6 +231,7 @@ header .menu .menu_button li:nth-child(3) {
   letter-spacing: -0.36px;
   border: none;
   background: transparent;
+
 }
 
 .section01 .search input:focus {
@@ -232,10 +243,11 @@ header .menu .menu_button li:nth-child(3) {
   border: none;
   width: 34px;
   height: 34px;
-  display: block;
+  display: flex;
   overflow: hidden;
   text-indent: -9000px;
 }
+
 
 
 /* section02 */
@@ -701,27 +713,24 @@ footer .notice {
 
 footer .notice a {
   display: flex;
+  position: relative;
   width: 160px;
   justify-content: center;
   align-items: center;
 }
 
-footer .notice a:first-child::after {
+
+footer .notice a::after {
+  position: absolute;
+  content: "";
   width: 3px;
   height: 25px;
   background: #C4C4C4;
-  content: "";
-  position: absolute;
-  top: 4px;
-  right: 466px;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
 }
 
-footer .notice a:nth-child(2)::after {
-  width: 3px;
-  height: 25px;
-  background: #C4C4C4;
-  content: "";
-  position: absolute;
-  top: 4px;
-  right: 194px;
+footer .notice a:last-child::after {
+  display: none;
 }
