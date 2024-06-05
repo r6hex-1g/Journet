@@ -39,6 +39,9 @@
         <pre>Journet/
 └── Journet-Web/
     ├── DB/
+        └── Supabase/
+            ├── datatype.types.ts
+            └── Supabase.js
     ├── Diary/
     ├── Home/
     └── WriteDiary/
