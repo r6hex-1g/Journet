@@ -41,7 +41,7 @@ var marker = new kakao.maps.Marker({
 });
 marker.setMap(map);
 
-// 마우스 클릭 이벤트 설정 - 점검 예정
+// 마우스 클릭 이벤트 설정
 kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
   var mouse_latlng = mouseEvent.latLng;
   marker.setPosition(mouse_latlng);
@@ -50,6 +50,8 @@ kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
 // 생성자 함수 => 객체 > 배열
 let map_pin = [];
 let markers = [];
+let contents = [];
+let iw_content = [];
 
 // DB 로딩하기
 async function refrash_mappins() {
@@ -58,16 +60,26 @@ async function refrash_mappins() {
   console.log('pins', pins);
 
   function DB_pin(title, lat, lng) {
-    this.title = title;
     this.latlng = new kakao.maps.LatLng(lat, lng);
     this.building = function () {
-      return title;
+      return latlng;
+    };
+  };
+
+  function DB_infowindow(B_title, B_lat, B_lng) {
+    this.B_title = B_title;
+    this.B_latlng = new kakao.maps.LatLng(B_lat, B_lng);
+    this.B_name = function () {
+      return B_title;
     };
   };
 
   for (let pin of pins) {
     let db_pin = new DB_pin(pin.building_name, pin.latitude, pin.longitude);
     map_pin.push(db_pin);
+
+    let db_infowindow = new DB_infowindow(pin.building_name, pin.latitude, pin.longitude);
+    iw_content.push(db_infowindow);
   }
 
   for (let all_pin of map_pin) {
@@ -79,5 +91,30 @@ async function refrash_mappins() {
     markers.push(marker);
   }
   pin_clusterer.addMarkers(markers);
+
+  for (let all_content of iw_content) {
+    // 마커 인포 생성
+    var info_window = new kakao.maps.InfoWindow({
+      content: `<div style=padding:5px; align-items:center;>${all_content.B_title}</div>`,
+      position: all_content.B_latlng
+    });
+    console.log(info_window.position); // 두개가 동시에 undefined로 나오는 문제 해결해보기
+
+    // 마커 인포 표출
+    kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, info_window));
+    kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(info_window));
+  }
+
+  function makeOverListener(map, marker, info_window) {
+    return function () {
+      info_window.open(map, marker);
+    };
+  }
+
+  function makeOutListener(info_window) {
+    return function () {
+      info_window.close();
+    };
+  }
 }
 refrash_mappins();
