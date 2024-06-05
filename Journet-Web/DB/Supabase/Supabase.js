@@ -34,10 +34,18 @@ map.setDraggable(true);
 var control = new kakao.maps.ZoomControl();
 map.addControl(control, kakao.maps.ControlPosition.BOTTOMRIGHT);
 
+// 마커 기본 설정
+var pin_center = new kakao.maps.LatLng(36.6350459, 127.4578066);
+var marker = new kakao.maps.Marker({
+  position: pin_center
+});
+marker.setMap(map);
+
 // 마우스 클릭 이벤트 설정 - 점검 예정
-// kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
-//   var latlng = mouseEvent.latLng;
-// });
+kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
+  var mouse_latlng = mouseEvent.latLng;
+  marker.setPosition(mouse_latlng);
+});
 
 // 생성자 함수 => 객체 > 배열
 let map_pin = [];
