@@ -9,10 +9,10 @@ const client = supabase.createClient(
 
 // 맵 기본 설정
 var mapContainer = document.getElementById('map');
-var Center = new kakao.maps.LatLng(36.6364883, 127.4836014);
+var Center = new kakao.maps.LatLng(36.6308081, 127.4866762);
 var options = {
   center: Center,
-  level: 7
+  level: 6
 };
 let map = new kakao.maps.Map(mapContainer, options);
 
@@ -26,7 +26,7 @@ let clusterer = {
 let pin_clusterer = new kakao.maps.MarkerClusterer(clusterer);
 
 // 맵 세부 설정
-map.setMaxLevel(7, { animate: true });
+map.setMaxLevel(6, { animate: true });
 map.setZoomable(true);
 map.setDraggable(true);
 
