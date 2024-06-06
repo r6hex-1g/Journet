@@ -50,8 +50,8 @@ kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
 // 생성자 함수 => 객체 > 배열
 let map_pin = [];
 let markers = [];
-let contents = [];
 let iw_content = [];
+let contents = [];
 
 // DB 로딩하기
 async function refrash_mappins() {
@@ -95,26 +95,24 @@ async function refrash_mappins() {
   for (let all_content of iw_content) {
     // 마커 인포 생성
     var info_window = new kakao.maps.InfoWindow({
-      content: `<div style=padding:5px; align-items:center;>${all_content.B_title}</div>`,
+      content: `<div style=width:150px;text-align:center;padding:6px 0;>${all_content.B_title}</div>`,
       position: all_content.B_latlng
     });
-    console.log(info_window.position); // 두개가 동시에 undefined로 나오는 문제 해결해보기
+    contents.push(info_window);
+  }
 
+  console.log(contents);
+
+  for (let content of contents) {
     // 마커 인포 표출
-    kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, info_window));
-    kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(info_window));
-  }
+    kakao.maps.event.addListener(marker, 'mouseover', function () {
+      content.open(map, marker);
+    });
 
-  function makeOverListener(map, marker, info_window) {
-    return function () {
-      info_window.open(map, marker);
-    };
+    kakao.maps.event.addListener(marker, 'mouseout', function () {
+      content.close();
+    });
   }
-
-  function makeOutListener(info_window) {
-    return function () {
-      info_window.close();
-    };
-  }
+  console.log(content);
 }
 refrash_mappins();
