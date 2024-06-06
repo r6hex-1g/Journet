@@ -39,11 +39,17 @@
         <pre>Journet/
 └── Journet-Web/
     ├── DB/
-        └── Supabase/
-            ├── datatype.types.ts
-            └── Supabase.js
+    │   └── Supabase/
+    │       ├── datatype.types.ts
+    │       └── Supabase.js
     ├── Diary/
     ├── Home/
+    │   ├── img/
+    │   │   └── images ...
+    │   ├── main_m.css
+    │   ├── main_t.css
+    │   ├── main.css
+    │   └── main.html
     └── WriteDiary/
         </pre>
     </div>
