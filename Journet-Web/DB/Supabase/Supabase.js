@@ -60,26 +60,26 @@ async function refrash_mappins() {
   console.log('pins', pins);
 
   function DB_pin(title, lat, lng) {
+    this.title = title;
     this.latlng = new kakao.maps.LatLng(lat, lng);
     this.building = function () {
       return latlng;
     };
   };
 
-  function DB_infowindow(B_title, B_lat, B_lng) {
-    this.B_title = B_title;
-    this.B_latlng = new kakao.maps.LatLng(B_lat, B_lng);
-    this.B_name = function () {
-      return B_title;
-    };
-  };
+  // function DB_infowindow(B_title, B_lat, B_lng) {
+  //   this.B_latlng = new kakao.maps.LatLng(B_lat, B_lng);
+  //   this.B_name = function () {
+  //     return B_title;
+  //   };
+  // };
 
   for (let pin of pins) {
     let db_pin = new DB_pin(pin.building_name, pin.latitude, pin.longitude);
     map_pin.push(db_pin);
 
-    let db_infowindow = new DB_infowindow(pin.building_name, pin.latitude, pin.longitude);
-    iw_content.push(db_infowindow);
+    // let db_infowindow = new DB_infowindow(pin.building_name, pin.latitude, pin.longitude);
+    // iw_content.push(db_infowindow);
   }
 
   for (let all_pin of map_pin) {
@@ -89,30 +89,31 @@ async function refrash_mappins() {
       position: all_pin.latlng,
     });
     markers.push(marker);
-  }
-  pin_clusterer.addMarkers(markers);
 
-  for (let all_content of iw_content) {
     // 마커 인포 생성
     var info_window = new kakao.maps.InfoWindow({
-      content: `<div style=width:150px;text-align:center;padding:6px 0;>${all_content.B_title}</div>`,
-      position: all_content.B_latlng
+      content: `<div style=width:150px;text-align:center;padding:6px 0;>${all_pin.title}</div>`,
+      // position: all_content.B_latlng
     });
-    contents.push(info_window);
+
+    // 마커 이벤트 등록
+    kakao.maps.event.addListener(marker, 'mouseover', mouse_over_listener(map, marker, info_window));
+    kakao.maps.event.addListener(marker, 'mouseout', mouse_out_listener(info_window));
+
+    // 마우스 호버시 마커 인포 노출
+    function mouse_over_listener(map, marker, info_window) {
+      return function () {
+        info_window.open(map, marker);
+      };
+    }
+
+    // 마우스 언호버시 마커인포 사라짐
+    function mouse_out_listener(info_window) {
+      return function () {
+        info_window.close();
+      };
+    }
   }
-
-  console.log(contents);
-
-  for (let content of contents) {
-    // 마커 인포 표출
-    kakao.maps.event.addListener(marker, 'mouseover', function () {
-      content.open(map, marker);
-    });
-
-    kakao.maps.event.addListener(marker, 'mouseout', function () {
-      content.close();
-    });
-  }
-  console.log(content);
+  pin_clusterer.addMarkers(markers);
 }
 refrash_mappins();
