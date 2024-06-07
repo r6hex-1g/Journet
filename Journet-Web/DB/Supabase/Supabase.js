@@ -67,19 +67,9 @@ async function refrash_mappins() {
     };
   };
 
-  // function DB_infowindow(B_title, B_lat, B_lng) {
-  //   this.B_latlng = new kakao.maps.LatLng(B_lat, B_lng);
-  //   this.B_name = function () {
-  //     return B_title;
-  //   };
-  // };
-
   for (let pin of pins) {
     let db_pin = new DB_pin(pin.building_name, pin.latitude, pin.longitude);
     map_pin.push(db_pin);
-
-    // let db_infowindow = new DB_infowindow(pin.building_name, pin.latitude, pin.longitude);
-    // iw_content.push(db_infowindow);
   }
 
   for (let all_pin of map_pin) {
@@ -93,7 +83,6 @@ async function refrash_mappins() {
     // 마커 인포 생성
     var info_window = new kakao.maps.InfoWindow({
       content: `<div style=width:150px;text-align:center;padding:6px 0;>${all_pin.title}</div>`,
-      // position: all_content.B_latlng
     });
 
     // 마커 이벤트 등록
