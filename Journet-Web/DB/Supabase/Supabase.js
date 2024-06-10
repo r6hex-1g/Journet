@@ -80,26 +80,48 @@ async function refrash_mappins() {
     });
     markers.push(marker);
 
+    var Content = `<div class="wrap">` +
+      `    <div class="info">` +
+      `        <div class="title">` +
+      `            ${all_pin.title}` +
+      `            <div class="close" onclick="closeOverlay()" title="닫기"></div>` +
+      `        </div>` +
+      `        <div class="body">` +
+      `            <div class="img">` +
+      `                <img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/thumnail.png" width="73" height="70">` +
+      `           </div>` +
+      `            <div class="desc">` +
+      `                <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>` +
+      `                <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>` +
+      `                <div><a href="https://www.kakaocorp.com/main" target="_blank" class="link">홈페이지</a></div>` +
+      `            </div>` +
+      `        </div>` +
+      `    </div>` +
+      `</div>`;
+
     // 마커 인포 생성
-    var info_window = new kakao.maps.InfoWindow({
-      content: `<div style=width:150px;text-align:center;padding:6px 0;>${all_pin.title}</div>`,
+    var overlay = new kakao.maps.CustomOverlay({
+      content: Content,
+      map: map,
+      position: marker.getPosition()
     });
+    overlay.setMap(null);
 
     // 마커 이벤트 등록
-    kakao.maps.event.addListener(marker, 'mouseover', mouse_over_listener(map, marker, info_window));
-    kakao.maps.event.addListener(marker, 'mouseout', mouse_out_listener(info_window));
+    kakao.maps.event.addListener(marker, 'mouseover', mouse_over_listener(map, marker, overlay));
+    kakao.maps.event.addListener(marker, 'mouseout', mouse_out_listener(overlay));
 
     // 마우스 호버시 마커 인포 노출
-    function mouse_over_listener(map, marker, info_window) {
+    function mouse_over_listener(map, marker, overlay) {
       return function () {
-        info_window.open(map, marker);
+        overlay.setMap(map, marker);
       };
     }
 
     // 마우스 언호버시 마커인포 사라짐
-    function mouse_out_listener(info_window) {
+    function mouse_out_listener(overlay) {
       return function () {
-        info_window.close();
+        overlay.setMap(null);
       };
     }
   }
