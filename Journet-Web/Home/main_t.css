@@ -89,21 +89,21 @@ header .menu {
   padding: 10px 0px 50px 0px;
   align-self: stretch;
 }
+.section04 .title {
+  color: brown;
+}
 
 
 .section04 .maincontent {
   display: flex;
   flex-direction: column;
-  align-items: center;
   align-self: stretch;
-  transform: translate3d(-25%, 0px, 0px);
-  min-width: 352px;
+  padding: 0 8.5%;
 }
 
 .section04 .maincontent .swiper-slide {
   width: 344px;
   border-radius: 30px;
-  min-width: 350px;
 }
 
 .section04 .maincontent .swiper-slide .textbox {
@@ -138,7 +138,7 @@ header .menu {
 }
 
 .section04 .maincontent .swiper-slide.bg_img {
-  width: 352px;
+  width: 344px;
 }
 
 .section04 .maincontent .swiper-slide.bg_img .textbox {

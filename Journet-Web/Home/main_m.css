@@ -66,6 +66,7 @@ header .menu .menu_button li:nth-child(3) {
   align-self: stretch;
   gap: 5px;
   padding: 0;
+  color: blue;
 }
 
 .section01 .title h2 {
@@ -142,9 +143,15 @@ header .menu .menu_button li:nth-child(3) {
 }
 
 .section03 .maincontent {
-  padding: 0px 30px 100px 30px;
+  padding: 0px 8.5% 100px 8.5%;
+  height: 600px;
 }
-
+.section03 .swiper-slide {
+  height: 460px;
+}
+.section03 .textbox {
+  padding: 11% 10%;
+}
 .section03 .swiper-pagination {
   display: flex;
   padding: 15px 18px;
@@ -181,12 +188,15 @@ header .menu .menu_button li:nth-child(3) {
 
 
 .section04 {
-  padding: 10px 30px 0px 30px;
+  padding: 10px 8.5% 0px 8.5%;
   gap: 50px;
+}
+.section04 .title {
+  padding: 0;
 }
 
 .section04 .maincontent {
-  transform: translate3d(-46%, 0px, 0px);
+  padding: 0
 }
 
 
@@ -196,6 +206,7 @@ header .menu .menu_button li:nth-child(3) {
   align-items: flex-start;
   flex-direction: column;
   gap: 5px;
+  color: blue;
 }
 
 .section04 .title h2 {
