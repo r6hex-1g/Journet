@@ -111,7 +111,6 @@ async function refrash_mappins() {
       `    <div class="info">` +
       `        <div class="title">` +
       `            ${all_pin.title}` +
-      `            <div class="close" onclick="closeOverlay()" title="닫기"></div>` +
       `        </div>` +
       `        <div class="body">` +
       `            <div class="img">` +

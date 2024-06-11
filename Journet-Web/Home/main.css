@@ -330,16 +330,6 @@ header .menu .menu_button li:nth-child(3) {
   font-weight: bold;
 }
 
-.info .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #888;
-  width: 17px;
-  height: 17px;
-  background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
-}
-
 .info .close:hover {
   cursor: pointer;
 }
