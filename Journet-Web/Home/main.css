@@ -330,10 +330,6 @@ header .menu .menu_button li:nth-child(3) {
   font-weight: bold;
 }
 
-.info .close:hover {
-  cursor: pointer;
-}
-
 .info .body {
   position: relative;
   overflow: hidden;
@@ -377,10 +373,6 @@ header .menu .menu_button li:nth-child(3) {
   width: 22px;
   height: 12px;
   background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
-}
-
-.info .link {
-  color: #5085BB;
 }
 
 /* section03 */
