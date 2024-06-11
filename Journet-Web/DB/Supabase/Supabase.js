@@ -74,12 +74,6 @@ function displayMarker(loc_position, message) {
   info_window.open(map, loc_marker);
 }
 
-// 마우스 클릭 이벤트 설정 - 재설정 예정
-// kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
-//   var mouse_latlng = mouseEvent.latLng;
-//   loc_marker.setPosition(mouse_latlng);
-// });
-
 // 생성자 함수 => 객체 > 배열
 let map_pin = [];
 let markers = [];
