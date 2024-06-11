@@ -86,16 +86,18 @@ async function refrash_mappins() {
   let { data: pins, error } = await client.from("Mappins").select("*");
   console.log('pins', pins);
 
-  function DB_pin(title, lat, lng) {
+  function DB_pin(title, lat, lng, street, address) {
     this.title = title;
     this.latlng = new kakao.maps.LatLng(lat, lng);
+    this.street = street;
+    this.address = address;
     this.building = function () {
       return latlng;
     };
   };
 
   for (let pin of pins) {
-    let db_pin = new DB_pin(pin.building_name, pin.latitude, pin.longitude);
+    let db_pin = new DB_pin(pin.building_name, pin.latitude, pin.longitude, pin.street_address, pin.address);
     map_pin.push(db_pin);
   }
 
@@ -117,9 +119,8 @@ async function refrash_mappins() {
       `                <img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/thumnail.png" width="73" height="70">` +
       `           </div>` +
       `            <div class="desc">` +
-      `                <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>` +
-      `                <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>` +
-      `                <div><a href="https://www.kakaocorp.com/main" target="_blank" class="link">홈페이지</a></div>` +
+      `                <div class="ellipsis">${all_pin.street}</div>` +
+      `                <div class="jibun ellipsis">(지번) ${all_pin.address}</div>` +
       `            </div>` +
       `        </div>` +
       `    </div>` +
