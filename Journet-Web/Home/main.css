@@ -608,7 +608,7 @@ header .menu .menu_button li:nth-child(3) {
   width: 100%;
   height: 100%;
   overflow: visible;
-  transform: translate3d(-20.5%, 0px, 0px);
+  padding: 0 17.5%;
 }
 
 /* 이미지 없는 기본 슬라이드 */
@@ -620,7 +620,8 @@ header .menu .menu_button li:nth-child(3) {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  min-width: 450px;
+  width: auto;
+  flex-shrink: 0;
 }
 
 .section04 .maincontent .swiper-slide .textbox {

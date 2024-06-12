@@ -383,11 +383,11 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper1 = new Swiper(".section03 .maincontent", {
-      slidesPerView: 1.5,
+      slidesPerView: 1,
       centeredSlides: true,
-      spaceBetween: 110,
+      spaceBetween: 30,
       breakpoints: {
-        640: {
+        767: {
           slidesPerView: 1,
           spaceBetween: 200,
 
@@ -405,17 +405,16 @@
       },
     });
     var swiper2 = new Swiper(".section04 .maincontent", {
-      slidesPerView: 4,
-      centeredSlides: true,
+      slidesPerView: 'auto',
       spaceBetween: 30,
       breakpoints: {
-        640: {
-          slidesPerView: 3,
+        767: {
+          slidesPerView: 'auto',
           spaceBetween: 30,
 
         },
         1200: {
-          slidesPerView: 4,
+          slidesPerView: 'auto',
           spaceBetween: 30,
         },
       },
