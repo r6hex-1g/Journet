@@ -8,15 +8,18 @@
     🔗 : <a href="https://r6hex-1g.github.io/Journet/Journet-Web/Home/main.html">Journet으로 가기!</a>
     <br>
     <br>
-    📅 : 2024. 03. 28. ~
-    <br>
-    <br>
     🖥️ : Beta Ver.0.11 <b>(PAUSE)<b><br>
     📱 : <a href="https://github.com/r6hex-1g/Journet_App">앱 버전으로 가기!</a>
     <br>
     <br>
     <b>해당 사이트들을 조금씩 참고해서 만들었습니다! ✨</b><br>
     <a href="https://jinjja-seoul.com/">진짜서울</a>, <a href="https://www.myro.co.kr/">MYRO</a>, <a href="https://www.ecomuseum.kr/main.do">경기에코뮤지엄</a>, <a href="https://www.apple.com/kr/">애플</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>📅 : 프로젝트 진행 일정</h1>
+    <p>2024. 03. 28. ~ 2024. 06. 12. (Q1)</p>
     <br>
     <br>
     <br>
