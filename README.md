@@ -11,7 +11,7 @@
     📅 : 2024. 03. 28. ~
     <br>
     <br>
-    🖥️ : Beta Ver.0.11 **(PAUSE)**<br>
+    🖥️ : Beta Ver.0.11 <b>(PAUSE)<b><br>
     📱 : <a href="https://github.com/r6hex-1g/Journet_App">앱 버전으로 가기!</a>
     <br>
     <br>
