@@ -35,45 +35,6 @@ var control = new kakao.maps.ZoomControl();
 map.addControl(control, kakao.maps.ControlPosition.BOTTOMRIGHT);
 
 // 마커 기본 설정
-// 현위치 가져오기 설정
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function (position) {
-    var lat = position.coords.latitude, // 경도 가져오기
-      lon = position.coords.longitude; // 위도 가져오기
-
-    var loc_position = new kakao.map.LatLng(lat, lon),
-      message = '<div style="padding:5px;">여기에 계신가요?!</div>';
-
-    displayMarker(loc_position, message);
-  });
-} else {
-  var loc_position = new kakao.map.LatLng(36.6350459, 127.4578066),
-    message = '현재 위치를 가져올 수 없어요. 다시 시도해주세요.';
-
-  displayMarker(loc_position, message);
-}
-
-function displayMarker(loc_position, message) {
-
-  // 마커 생성
-  var loc_marker = new kakao.maps.marker({
-    map: map,
-    position: loc_position
-  });
-
-  var info_content = message, // 마커 인포윈도우에 표시할 내용
-    info_removeable = true;
-
-  //  인포윈도우 생성
-  var info_window = kakao.maps.Infowindow({
-    content: info_content,
-    removeable: info_removeable
-  });
-
-  // 윈포윈도우를 마커 위에 표시
-  info_window.open(map, loc_marker);
-}
-
 // 생성자 함수 => 객체 > 배열
 let map_pin = [];
 let markers = [];
