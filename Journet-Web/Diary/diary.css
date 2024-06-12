@@ -1,7 +1,0 @@
-@charset "utf-8";
-
-/* 웹사이트 기본 마진 제거 */
-* {
-  margin: 0px;
-  padding: 0px;
-}

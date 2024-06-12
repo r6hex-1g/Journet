@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journet - 일기 전체 보기</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/Journet/Journet-Web/Diary/all_diary.css">
+</head>
+
+<body>
+  <header>
+    <a href="/Journet/Journet-Web/Home/main.html" class="logo">Journet</a>
+    <div class="menu">
+      <a href="#" class="story">Story</a>
+      <a href="#" class="guide">Guide</a>
+      <ul class="menu_button">
+        <li>
+          <a href="#" class="menu_bell"><i class="fa-solid fa-bell"></i></a>
+        </li>
+        <li>
+          <a href="#" class="menu_profile"><i class="fa-solid fa-face-meh"></i></a>
+        </li>
+        <li>
+          <a href="#" class="menu_hamburger"><i class="fa-solid fa-bars"></i></a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+
+  <div id="full_map"></div>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=564115dcd7ead3ed0d36372d5583c5b1&libraries=clusterer"></script>
+  <script src="/Journet/Journet-Web/Diary/all_diary.js"></script>
+</body>
+
+</html>
